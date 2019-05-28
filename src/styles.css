@@ -1,0 +1,607 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #252425; }
+
+a {
+  text-decoration: none;
+  color: unset; }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  background-color: rgba(37, 36, 37, 0);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .navbar .sign-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40%;
+    padding: 1rem; }
+    .navbar .sign-container img {
+      width: 10rem;
+      margin-right: auto; }
+  .navbar .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 60%;
+    padding: 1rem;
+    list-style-type: none; }
+    .navbar .menu-container li {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: .9rem;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      margin-left: .6rem;
+      margin-right: .6rem;
+      cursor: pointer;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .navbar .menu-container li:hover {
+      color: white; }
+    .navbar .menu-container .active {
+      color: white; }
+
+.navbar:hover {
+  background-color: rgba(37, 36, 37, 0.9);
+  -webkit-box-shadow: 0px 0px 50px rgba(37, 36, 37, 0.7);
+  box-shadow: 0px 0px 50px rgba(37, 36, 37, 0.7); }
+
+.parallax-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 110vh; }
+  .parallax-background .parallax-textbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: inset 0px 0px 250px #252425;
+    box-shadow: inset 0px 0px 250px #252425;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase; }
+    .parallax-background .parallax-textbox .titles-section {
+      padding: 1rem; }
+      .parallax-background .parallax-textbox .titles-section h2, .parallax-background .parallax-textbox .titles-section p {
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 200;
+        font-family: "Montserrat", sans-serif;
+        color: rgba(255, 255, 255, 0.9);
+        padding: 0;
+        margin: 0;
+        cursor: default; }
+      .parallax-background .parallax-textbox .titles-section p {
+        font-size: 2.5rem; }
+  .parallax-background .genres-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 35%;
+    margin-top: 3rem; }
+    .parallax-background .genres-section p {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 200;
+      font-family: "Montserrat", sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0);
+      padding: 10px;
+      margin: 0;
+      cursor: pointer;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .parallax-background .genres-section p:hover {
+      background-color: rgba(37, 36, 37, 0);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.7); }
+  .parallax-background .parallax-secondary-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 3rem; }
+    .parallax-background .parallax-secondary-section .parallax-title {
+      width: 100%;
+      font-size: 3.5rem;
+      font-weight: 200;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      margin: 1rem;
+      cursor: default; }
+    .parallax-background .parallax-secondary-section .btn {
+      border: 0;
+      font-size: 1.1rem;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      color: white;
+      background-color: rgba(37, 36, 37, 0);
+      border: 1px solid rgba(255, 255, 255, 0);
+      padding: .7rem;
+      cursor: pointer;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .parallax-background .parallax-secondary-section .btn:hover {
+      border: 1px solid rgba(255, 255, 255, 0.7); }
+    .parallax-background .parallax-secondary-section .btn:focus {
+      outline: none; }
+    .parallax-background .parallax-secondary-section .down {
+      width: 3rem;
+      height: 3rem;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      margin-left: 1rem; }
+
+.first {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.second {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.scroll-to-top {
+  font-size: 1rem;
+  color: white;
+  opacity: .6;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+
+.scroll-to-top:hover {
+  opacity: 1; }
+
+.about-page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-image: url("./images/gallery_back/bw_back.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  .about-page .about-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #252425; }
+    .about-page .about-header .about-title {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      font-weight: 200;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      padding: 1rem;
+      margin: 0;
+      cursor: default; }
+  .about-page .about-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%; }
+    .about-page .about-info .about-parallax {
+      width: 50%; }
+    .about-page .about-info .fourth {
+      width: 60%;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      height: 80vh; }
+      .about-page .about-info .fourth .parallax-about-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 10rem;
+        margin-left: 3rem;
+        background-color: rgba(37, 36, 37, 0.8);
+        padding: 1rem; }
+        .about-page .about-info .fourth .parallax-about-section p {
+          font-size: 2rem;
+          margin: 0;
+          color: rgba(255, 255, 255, 0.9);
+          -webkit-transition: .1s;
+          -o-transition: .1s;
+          transition: .1s;
+          cursor: pointer; }
+        .about-page .about-info .fourth .parallax-about-section p:hover {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+    .about-page .about-info .about-textbox {
+      width: 35%;
+      margin: auto;
+      padding: 2rem; }
+      .about-page .about-info .about-textbox h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 0; }
+      .about-page .about-info .about-textbox p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 2rem; }
+
+.gallery-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .gallery-main-container .gallery-inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(37, 36, 37, 0.8); }
+    .gallery-main-container .gallery-inner-container .gallery-main-textbox {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 30vh; }
+      .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-title {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 200;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        padding: 1rem;
+        margin: 0;
+        margin-top: 4rem;
+        cursor: default; }
+      .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-categories {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%; }
+        .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-categories p {
+          font-family: "Montserrat", sans-serif;
+          font-size: 1rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          cursor: pointer;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.7);
+          border: 1px solid rgba(255, 255, 255, 0);
+          padding: .6rem;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+        .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-categories p:hover {
+          border: 1px solid rgba(255, 255, 255, 0.6); }
+        .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-categories .active-submenu p {
+          border: 1px solid rgba(255, 255, 255, 0.6); }
+    .gallery-main-container .gallery-inner-container .genres-list-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      background-color: rgba(255, 255, 255, 0.9); }
+      .gallery-main-container .gallery-inner-container .genres-list-container .genre-element {
+        width: 25%;
+        -webkit-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        cursor: pointer; }
+        .gallery-main-container .gallery-inner-container .genres-list-container .genre-element .third {
+          height: 100vh; }
+        .gallery-main-container .gallery-inner-container .genres-list-container .genre-element .parallax-secondary-section .parallax-title {
+          font-size: 2rem;
+          padding: 1rem;
+          opacity: 0;
+          -webkit-transition: .4s;
+          -o-transition: .4s;
+          transition: .4s;
+          background-color: rgba(37, 36, 37, 0.8);
+          border: 1px solid rgba(255, 255, 255, 0);
+          text-transform: uppercase;
+          cursor: pointer; }
+      .gallery-main-container .gallery-inner-container .genres-list-container .genre-element:hover {
+        width: 35%;
+        opacity: .7; }
+        .gallery-main-container .gallery-inner-container .genres-list-container .genre-element:hover .parallax-secondary-section .parallax-title {
+          opacity: 1; }
+        .gallery-main-container .gallery-inner-container .genres-list-container .genre-element:hover .parallax-secondary-section .parallax-title:hover {
+          border: 1px solid white; }
+    .gallery-main-container .gallery-inner-container .images-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: white; }
+      .gallery-main-container .gallery-inner-container .images-container h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        cursor: default; }
+      .gallery-main-container .gallery-inner-container .images-container .gallery {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; }
+        .gallery-main-container .gallery-inner-container .images-container .gallery .gallery-column {
+          -webkit-box-flex: 30%;
+          -ms-flex: 30%;
+          flex: 30%;
+          max-width: 30%;
+          margin-left: .3rem;
+          margin-right: .3rem; }
+        .gallery-main-container .gallery-inner-container .images-container .gallery .img-container {
+          overflow: hidden;
+          margin-top: .3rem;
+          margin-bottom: .3rem;
+          border: 2px solid rgba(255, 255, 255, 0);
+          -webkit-transition: .4s;
+          -o-transition: .4s;
+          transition: .4s; }
+          .gallery-main-container .gallery-inner-container .images-container .gallery .img-container img {
+            width: 100%;
+            vertical-align: middle;
+            -webkit-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s; }
+          .gallery-main-container .gallery-inner-container .images-container .gallery .img-container img:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+        .gallery-main-container .gallery-inner-container .images-container .gallery .img-container:hover {
+          border: 2px solid rgba(255, 255, 255, 0.6); }
+    .gallery-main-container .gallery-inner-container .compart-container {
+      background-color: white; }
+    .gallery-main-container .gallery-inner-container .bw-container {
+      background-color: white; }
+    .gallery-main-container .gallery-inner-container .portraits-container {
+      background-color: white; }
+    .gallery-main-container .gallery-inner-container .shamans-container {
+      background-color: white; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 10rem; }
+  .footer .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .footer .footer-block h2 {
+      font-family: "Montserrat", sans-serif;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.3rem;
+      font-weight: 200;
+      text-transform: uppercase; }
+    .footer .footer-block .website {
+      font-family: "Montserrat", sans-serif;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+      font-weight: 200;
+      margin: 0; }
+    .footer .footer-block .socials {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 50%;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin-top: 1rem;
+      height: 3rem; }
+      .footer .footer-block .socials .social-btn {
+        font-size: 2rem;
+        cursor: pointer;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        color: rgba(255, 255, 255, 0.9); }
+      .footer .footer-block .socials .social-btn:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+  .footer .copyright {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: .8rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 1rem; }

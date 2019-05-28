@@ -1,0 +1,490 @@
+$mainDark: rgba(37, 36, 37, 1);
+$mainFont: 'Raleway', sans-serif;
+$secondaryFont: 'Montserrat', sans-serif;
+
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(37, 36, 37, 1);
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+// ------------------------- NAVBAR
+.navbar {
+    @include flexbox;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    background-color: rgba(37, 36, 37, 0);
+    transition: .5s;
+    .sign-container {
+        @include flexbox;
+        width: 40%;
+        padding: 1rem;
+        img {
+            width: 10rem;
+            margin-right: auto;
+        }
+    }
+    .menu-container {
+        @include flexbox;
+        justify-content: flex-end;
+        width: 60%;
+        padding: 1rem;
+        list-style-type: none;
+        li {
+            color: rgba(255, 255, 255, .7);
+            font-size: .9rem;
+            font-family: $secondaryFont;
+            text-transform: uppercase;
+            margin-left: .6rem;
+            margin-right: .6rem;
+            cursor: pointer;
+            transition: .3s;
+        }
+        li:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        .active {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.navbar:hover {
+    background-color: rgba(37, 36, 37, .9);
+    box-shadow: 0px 0px 50px rgba(37, 36, 37, .7);
+}
+
+// ------------------------- Parallax 
+
+.parallax-background {
+    @include flexbox;
+    justify-content: center;
+    height: 110vh;
+    .parallax-textbox {
+        @include flexbox;
+        flex-direction: column;
+        // background-color: rgba(37, 36, 37, .1);
+        box-shadow: inset 0px 0px 250px rgba(37, 36, 37, 1);
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+        .titles-section {
+            // background-color: rgba(37, 36, 37, .5);
+            padding: 1rem;
+            h2, p {
+                width: 100%;
+                text-align: center;
+                font-size: 4rem;
+                font-weight: 200;
+                font-family: $secondaryFont;
+                color: rgba(255, 255, 255, .9);
+                padding: 0;
+                margin: 0;
+                cursor: default;
+            }
+            p {
+                font-size: 2.5rem;
+            }
+        }
+    } 
+    .genres-section {
+        @include flexbox;
+        justify-content: space-around;
+        width: 35%;
+        margin-top: 3rem;
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 200;
+            font-family: $secondaryFont;
+            color: rgba(255, 255, 255, .8);
+            border: 1px solid rgba(255, 255, 255, 0);
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+            transition: .3s;
+        }
+        p:hover {
+            background-color: rgba(37, 36, 37, 0); 
+            color: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(255, 255, 255, .7);
+        }
+    }
+    .parallax-secondary-section {
+        @include flexbox;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 3rem;
+        .parallax-title {
+            width: 100%;
+            font-size: 3.5rem;  
+            font-weight: 200;
+            text-align: center;
+            font-family: $secondaryFont;  
+            color: rgba(255, 255, 255, 1);
+            margin: 1rem;
+            cursor: default;
+        }
+        .btn {
+            border: 0;
+            font-size: 1.1rem;
+            font-family: $secondaryFont;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(37, 36, 37, .0);
+            border: 1px solid rgba(255, 255, 255, 0);
+            padding: .7rem;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .btn:hover {
+            border: 1px solid rgba(255, 255, 255, .7);
+        }
+        .btn:focus {
+            outline: none;
+        }
+        .down {
+            width: 3rem;
+            height: 3rem;
+            align-self: flex-start;
+            margin-left: 1rem;
+        }
+    }
+}
+.first {
+    justify-content: flex-start;
+}
+
+.second {
+    justify-content: flex-start;
+}
+
+
+// ------------------------- Scroll Top Button
+
+.scroll-to-top {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+    opacity: .6;
+    font-family: $secondaryFont;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}
+
+
+// ------------------------- About 
+
+.about-page {
+    width: 100%;
+    @include flexbox;
+    flex-direction: column;
+    justify-content: flex-start;
+    // background-color: rgba(255, 255, 255, .9);
+    background-image: url('./images/gallery_back/bw_back.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    .about-header {
+        @include flexbox;
+        width: 100%;
+        height: 30vh;
+        background-color: rgba(37, 36, 37, 1);
+        .about-title {
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            font-weight: 200;
+            font-family: $secondaryFont;
+            color: rgba(255, 255, 255, 1);
+            padding: 1rem;
+            margin: 0;
+            cursor: default;
+        }
+    }
+    .about-info {
+        @include flexbox;
+        background-color: rgba(255, 255, 255, .9);
+        width: 100%;
+        .about-parallax {
+            width: 50%;
+        }
+        .fourth {
+            width: 60%;
+            justify-content: flex-start;
+            height: 80vh;
+            .parallax-about-section {
+                @include flexbox;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 10rem;
+                margin-left: 3rem;
+                background-color: rgba(37, 36, 37, .8);
+                padding: 1rem;
+                p {
+                    font-size: 2rem;
+                    margin: 0;
+                    color: rgba(255, 255, 255, .9);
+                    transition: .1s;
+                    cursor: pointer;
+                }
+                p:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        // .about-image {
+        //     width: 100%;
+        //     height: 25rem;
+        //     background-image: url('./images/katarina.jpg');
+        //     background-size: cover;
+        //     background-position: center;
+        // }
+        .about-textbox {
+            width: 35%;
+            margin: auto;
+            padding: 2rem;
+            h2 {
+                font-family: $secondaryFont;
+                font-size: 2rem;
+                font-weight: 200;
+                margin: 0;
+            }
+            p {
+                font-family: $secondaryFont;
+                font-size: 1.1rem;
+                font-weight: 200;
+                margin: 0;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+// ------------------------- Gallery
+
+.gallery-main-container {
+    @include flexbox;
+    .gallery-inner-container {
+        @include flexbox;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(37, 36, 37, .8);
+            .gallery-main-textbox{
+                @include flexbox;
+                flex-direction: column;
+                height: 30vh;
+            .gallery-title{
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                font-weight: 200;
+                font-family: $secondaryFont;
+                color: rgba(255, 255, 255, 1);
+                padding: 1rem;
+                margin: 0;
+                margin-top: 4rem;
+                cursor: default;
+            }
+            .gallery-categories {
+                @include flexbox;
+                width: 100%;
+                p {
+                   font-family: $secondaryFont;
+                   font-size: 1rem;
+                   margin-left: 1rem;
+                   margin-right: 1rem;
+                   cursor: pointer;
+                   text-transform: uppercase;
+                   color: rgba(255, 255, 255, .7);
+                   border: 1px solid rgba(255, 255, 255, 0);
+                   padding: .6rem;
+                   transition: .3s;
+                }
+                p:hover {
+                    border: 1px solid rgba(255, 255, 255, .6);
+                }
+                .active-submenu p {
+                    border: 1px solid rgba(255, 255, 255, .6);
+                }                
+            }
+            
+        }
+        .genres-list-container {
+            @include flexbox;
+            width: 100%;
+            flex-direction: row;
+            background-color: rgba(255, 255, 255, .9);
+            .genre-element {
+                width: 25%;
+                transition: .8s;
+                cursor: pointer;
+                .third {
+                    height: 100vh;
+                }
+                .parallax-secondary-section {
+                    .parallax-title {
+                        font-size: 2rem;
+                        padding: 1rem;
+                        opacity: 0;
+                        transition: .4s;
+                        background-color: rgba(37, 36, 37, .8);
+                        border: 1px solid rgba(255, 255, 255, 0);
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                } 
+            }
+            .genre-element:hover {
+                width: 35%;
+                opacity: .7;
+                .parallax-secondary-section {
+                    .parallax-title {
+                        opacity: 1;
+                    }
+                    .parallax-title:hover {
+                        border: 1px solid rgba(255, 255, 255, 1);
+                    }
+                }                
+            }
+        }
+        .images-container {
+            @include flexbox;
+            width: 100%;
+            overflow: hidden;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 1);
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+                padding: 2rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                font-family: $secondaryFont;
+                margin: 0;
+                cursor: default;  
+            }
+            .gallery {
+                @include flexbox;
+                align-items: flex-start;
+                .gallery-column {
+                    flex: 30%;
+                    max-width: 30%;
+                    margin-left: .3rem;
+                    margin-right: .3rem;
+                }
+                .img-container {
+                    overflow: hidden; 
+                    margin-top: .3rem;     
+                    margin-bottom: .3rem;
+                    border: 2px solid rgba(255, 255, 255, .0);
+                    transition: .4s;
+                    img {
+                        width: 100%;
+                        vertical-align: middle;               
+                        transition: .4s;
+                    }
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                .img-container:hover {
+                    border: 2px solid rgba(255, 255, 255, .6);
+                }
+            }
+        }
+        .compart-container {
+            background-color: rgba(255, 255, 255, 1);
+            // background-image: url('./images/gallery_back/compart_back.jpg');
+            // background-size: cover;
+            // background-attachment: fixed;
+        }
+        .bw-container {
+            background-color: rgba(255, 255, 255, 1);
+            // background-image: url('./images/gallery_back/bw_back.jpg');
+            // background-size: cover;
+            // background-attachment: fixed;
+        }
+        .portraits-container {
+            background-color: rgba(255, 255, 255, 1);
+            // background-image: url('./images/gallery_back/portraits_back.jpg');
+            // background-size: cover;
+            // background-attachment: fixed;
+        }
+        .shamans-container{
+            background-color: rgba(255, 255, 255, 1);
+            // background-image: url('./images/gallery_back/shamans_back.jpg');
+            // background-size: cover;
+            // background-attachment: fixed;
+        }
+    }  
+}
+
+// ------------------------- FOOTER
+
+.footer {
+    @include flexbox;
+    min-height: 10rem;
+    .footer-block {
+        @include flexbox;
+        flex-direction: column;
+        h2 {
+            font-family: $secondaryFont;
+            color: rgba(255, 255, 255, .9);
+            font-size: 1.3rem;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+        .website {
+            font-family: $secondaryFont;
+            color: rgba(255, 255, 255, .9);
+            font-size: 1.1rem;
+            font-weight: 200;
+            margin: 0;
+        }
+        .socials {
+            @include flexbox;
+            width: 50%;
+            justify-content: space-around;
+            margin-top: 1rem;
+            height: 3rem;
+            .social-btn {
+                font-size: 2rem;
+                cursor: pointer;
+                transition: .2s;
+                color: rgba(255, 255, 255, .9);
+            }
+            .social-btn:hover {
+                transform: scale(1.2);
+            }
+        }
+        
+    }
+    .copyright {
+        font-family: $secondaryFont;
+        color: rgba(255, 255, 255, .9);
+        font-size: .8rem;
+        font-weight: 200;
+        margin: 0; 
+        padding: 1rem;
+    }
+}
+
+
+
