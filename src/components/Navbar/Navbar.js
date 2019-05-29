@@ -6,7 +6,7 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar">
         <div className="sign-container">
-          <Link to="/"><img src="./images/sign.png" alt=""/></Link>
+          <Link to="/"><img src='../../images/sign.png' alt=""/></Link>
         </div>
         <ul className="menu-container">
             <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
