@@ -34,11 +34,13 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     width: 40%;
     padding: 1rem; }
     .navbar .sign-container img {
-      width: 10rem;
-      margin-right: auto; }
+      width: 10rem; }
   .navbar .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -75,6 +77,21 @@ a {
   background-color: rgba(37, 36, 37, 0.9);
   -webkit-box-shadow: 0px 0px 50px rgba(37, 36, 37, 0.7);
   box-shadow: 0px 0px 50px rgba(37, 36, 37, 0.7); }
+
+@media (max-width: 450px) {
+  .navbar .sign-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    width: 30%; }
+    .navbar .sign-container img {
+      width: 5rem; }
+  .navbar .menu-container {
+    width: 70%;
+    padding: 0; }
+    .navbar .menu-container li {
+      font-size: .8rem; } }
 
 .parallax-background {
   display: -webkit-box;
@@ -211,6 +228,30 @@ a {
   -ms-flex-pack: start;
   justify-content: flex-start; }
 
+@media (max-width: 450px) {
+  .parallax-background {
+    height: 100vh; }
+    .parallax-background .parallax-textbox .titles-section {
+      padding: 0; }
+      .parallax-background .parallax-textbox .titles-section h2, .parallax-background .parallax-textbox .titles-section p {
+        font-size: 2.2rem; }
+      .parallax-background .parallax-textbox .titles-section p {
+        font-size: 1.5rem; }
+    .parallax-background .genres-section {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .parallax-background .genres-section p {
+        font-size: 1rem; }
+    .parallax-background .parallax-secondary-section {
+      width: 100%; }
+      .parallax-background .parallax-secondary-section .parallax-title {
+        font-size: 3rem;
+        margin: 5rem; }
+      .parallax-background .parallax-secondary-section .btn {
+        font-size: 1rem; } }
+
 .scroll-to-top {
   font-size: 1rem;
   color: white;
@@ -336,6 +377,50 @@ a {
         font-weight: 200;
         margin: 0;
         margin-top: 2rem; }
+
+@media (max-width: 450px) {
+  .about-page {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.9); }
+    .about-page .about-header {
+      height: 20vh; }
+      .about-page .about-header .about-title {
+        font-size: 2rem;
+        padding: 0;
+        margin-top: 2rem; }
+    .about-page .about-info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .about-page .about-info .about-parallax {
+        width: 100%; }
+      .about-page .about-info .fourth {
+        width: 100%; }
+      .about-page .about-info .about-textbox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        padding: 0rem;
+        margin: 0; }
+        .about-page .about-info .about-textbox h2 {
+          font-size: 1.5rem;
+          text-align: center; }
+        .about-page .about-info .about-textbox p {
+          font-size: .9rem;
+          padding: 1rem;
+          margin: 0; } }
 
 .gallery-main-container {
   display: -webkit-box;

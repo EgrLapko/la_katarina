@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
         <div className="sign-container">
-            <img src="./images/sign.png" alt=""/>
+          <Link to="/"><img src="./images/sign.png" alt=""/></Link>
         </div>
         <ul className="menu-container">
             <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>

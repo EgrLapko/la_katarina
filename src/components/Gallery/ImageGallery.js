@@ -1,10 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { NavLink, Route } from 'react-router-dom';
-import GalleryCompart from './GalleryCompart';
-import GalleryBlackWhite from './GalleryBlackWhite';
-import GalleryPortraits from './GalleryPortraits';
-import GalleryShamans from './GalleryShamans';
 import GalleryCategories from './GalleryCategories';
 
 import Photo from './Photo';
