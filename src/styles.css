@@ -78,7 +78,7 @@ a {
   -webkit-box-shadow: 0px 0px 50px rgba(37, 36, 37, 0.7);
   box-shadow: 0px 0px 50px rgba(37, 36, 37, 0.7); }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .navbar .sign-container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -228,7 +228,7 @@ a {
   -ms-flex-pack: start;
   justify-content: flex-start; }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .parallax-background {
     height: 100vh; }
     .parallax-background .parallax-textbox .titles-section {
@@ -382,7 +382,7 @@ a {
       .about-page .about-info .about-textbox .textbox-image {
         display: none; }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .about-page {
     background-image: none;
     background-color: rgba(255, 255, 255, 0.9); }
@@ -678,7 +678,7 @@ a {
       .gallery-main-container .gallery-inner-container .images-container .gallery-mobile {
         display: none; }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .gallery-main-container .gallery-inner-container .gallery-main-textbox {
     height: 20vh; }
     .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-title {
