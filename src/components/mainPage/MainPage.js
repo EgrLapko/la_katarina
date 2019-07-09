@@ -29,7 +29,7 @@ export default class MainPage extends Component {
                 </div>         
                 <div className="genres-section">
                   <ScrollableLink href="/compart">
-                    <p>Compart</p>
+                    <p>Computer art</p>
                   </ScrollableLink>
                   <ScrollableLink href="/bw">
                     <p>B/W images</p>
@@ -37,8 +37,8 @@ export default class MainPage extends Component {
                   <ScrollableLink href="/portraits">
                     <p>Portraits</p>
                   </ScrollableLink>
-                  <ScrollableLink href="/shamans">
-                    <p>Shamans</p>
+                  <ScrollableLink href="/projects">
+                    <p>Art projects</p>
                   </ScrollableLink>
                 </div>   
               </div>
@@ -97,7 +97,7 @@ export default class MainPage extends Component {
           </Parallax>
         </ScrollableSection>
 
-        <ScrollableSection name={'shamans'}>
+        <ScrollableSection name={'projects'}>
           <Parallax
                 blur={0}
                 bgImage={require('../../images/parallax/parallax5.jpg')}
@@ -107,8 +107,8 @@ export default class MainPage extends Component {
             >   
               <Fade bottom>
                 <div className="parallax-secondary-section">
-                  <h2 className="parallax-title">Shamans Project</h2>
-                  <Link to="/gallery/images_shamans"><button className="btn">Browse Gallery</button></Link>
+                  <h2 className="parallax-title">Art Projects</h2>
+                  <Link to="/gallery/images_shamans"><button className="btn">Browse Projects</button></Link>
                 </div>  
               </Fade>      
           </Parallax>
