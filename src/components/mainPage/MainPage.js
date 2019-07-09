@@ -56,7 +56,7 @@ export default class MainPage extends Component {
             >   
               <Fade bottom>
                 <div className="parallax-secondary-section">
-                  <h2 className="parallax-title">Comp-Art Pictures</h2>
+                  <h2 className="parallax-title">Computer Art Images</h2>
                   <Link to="/gallery/images_compart"><button className="btn">Browse Gallery</button></Link>
                 </div>          
               </Fade>      

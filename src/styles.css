@@ -17,14 +17,117 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
   height: 4rem;
   font-size: 1.5rem;
   color: white;
   position: fixed;
   top: 0;
   right: 2rem;
+  z-index: 5; }
+  .hamburger .fa-bars {
+    cursor: pointer;
+    background-color: rgba(37, 36, 37, 0.7);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+    width: 1.5rem;
+    height: 1.5rem; }
+  .hamburger .sign-logo {
+    width: 10rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    cursor: pointer; }
+    .hamburger .sign-logo img {
+      width: 100%; }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
   z-index: 4;
-  cursor: pointer; }
+  background-color: rgba(37, 36, 37, 0);
+  -webkit-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
+  transform: translateY(-110%);
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s; }
+  .navbar .nav-menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 70%; }
+    .navbar .nav-menus .menu-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .navbar .nav-menus .menu-item .menu-category {
+        font-family: "Montserrat", sans-serif;
+        font-size: 4rem;
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin: 0;
+        padding: .8rem;
+        cursor: default; }
+      .navbar .nav-menus .menu-item .menu-option {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.7);
+        padding: .3rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+      .navbar .nav-menus .menu-item .menu-option:hover {
+        color: rgba(255, 255, 255, 0.9); }
+
+.navbar-active {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  background-color: rgba(37, 36, 37, 0.9); }
 
 .parallax-background {
   display: -webkit-box;

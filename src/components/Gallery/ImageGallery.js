@@ -27,7 +27,7 @@ export default class ImageGallery extends Component {
                 <NavLink to={`${match.url}/images_compart`} activeClassName="active-submenu"><p>Compart</p></NavLink>
                 <NavLink to={`${match.url}/images_bw`} activeClassName="active-submenu"><p>Black and White</p></NavLink>
                 <NavLink to={`${match.url}/images_portraits`} activeClassName="active-submenu"><p>Portraits</p></NavLink>
-                <NavLink to={`${match.url}/images_shamans`} activeClassName="active-submenu"><p>Shamans</p></NavLink>
+                {/* <NavLink to={`${match.url}/images_shamans`} activeClassName="active-submenu"><p>Shamans</p></NavLink> */}
               </div>
             </Fade>    
           </div>

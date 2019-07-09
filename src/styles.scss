@@ -22,14 +22,84 @@ a {
 // ------------------------- NAVBAR
 .hamburger{
     @include flexbox;
+    justify-content: space-between;
+    width: 100%;
     height: 4rem;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
     right: 2rem;
+    z-index: 5;
+    .fa-bars {
+        cursor: pointer;
+        background-color: rgba(37, 36, 37, .7);
+        padding: .5rem;
+        border-radius: .4rem;
+        text-align: center;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .sign-logo {
+        width: 10rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.navbar {
+    @include flexbox;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
     z-index: 4;
-    cursor: pointer;
+    background-color: rgba(37, 36, 37, .0);
+    transform: translateY(-110%);
+    transition: .6s;   
+    .nav-menus {
+        @include flexbox;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 70%;
+        .menu-item {
+            @include flexbox;
+            flex-direction: column;
+            .menu-category {
+                font-family: $secondaryFont;
+                font-size: 4rem;
+                color: rgba(255, 255, 255, 1);
+                font-weight: 200;
+                text-transform: uppercase;
+                margin: 0;
+                padding: .8rem;
+                cursor: default;
+            }
+            .menu-option {
+                margin: 0;
+                font-family: $secondaryFont;
+                font-size: 2rem;
+                color: rgba(255, 255, 255, .7);
+                padding: .3rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                transition: .3s;
+            }
+            .menu-option:hover {
+                color: rgba(255, 255, 255, .9);
+            }
+        }    
+    }
+}
+
+.navbar-active {
+    transform: translateY(0%);
+    background-color: rgba(37, 36, 37, .9);
 }
 
 // ------------------------- Parallax 
