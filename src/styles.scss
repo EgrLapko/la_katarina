@@ -618,5 +618,39 @@ a {
     }
 }
 
+// ------------------------- Single Project
+.single-project-page {
+    @include flexbox;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+    .single-project {
+        @include flexbox;
+        flex-direction: column;
+        .single-title {
+            font-size: 4rem;
+            font-family: $secondaryFont;
+            text-transform: uppercase;
+            font-weight: 200;
+            margin: 0;
+            margin-top: 5rem;
+            cursor: default;
+        }
+        .single-description {
+            @include flexbox;
+            width: 40%;
+            .desc-text {
+                font-family: $secondaryFont;
+                font-size: 1.2rem;
+                margin-top: 2rem;
+                span {
+                    margin-left: 3rem;
+                }
+            }
+        }
+    }
+}
+
 
 

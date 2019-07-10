@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { NavLink, Route } from 'react-router-dom';
-import GalleryCategories from './GalleryCategories';
 
 import Photo from './Photo';
 import photos from '../../photos';
@@ -31,7 +30,6 @@ export default class ImageGallery extends Component {
               </div>
             </Fade>    
           </div>
-          <Route exact path={match.path} component={GalleryCategories}/>
           
           <Route path = {`${match.path}/images_compart`} render={() =>  
           <div className="images-container compart-container">
