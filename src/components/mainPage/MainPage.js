@@ -28,16 +28,16 @@ export default class MainPage extends Component {
                   <p>Photographer</p>
                 </div>         
                 <div className="genres-section">
-                  <ScrollableLink href="/compart">
+                  <ScrollableLink href="/compart_section">
                     <p>Computer art</p>
                   </ScrollableLink>
-                  <ScrollableLink href="/bw">
+                  <ScrollableLink href="/bw_section">
                     <p>B/W images</p>
                   </ScrollableLink>
-                  <ScrollableLink href="/portraits">
+                  <ScrollableLink href="/portraits_section">
                     <p>Portraits</p>
                   </ScrollableLink>
-                  <ScrollableLink href="/projects">
+                  <ScrollableLink href="/projects_section">
                     <p>Art projects</p>
                   </ScrollableLink>
                 </div>   
@@ -46,7 +46,7 @@ export default class MainPage extends Component {
           </Parallax>
         </Fade>
 
-        <ScrollableSection name={'compart'}>
+        <ScrollableSection name={'compart_section'}>
           <Parallax
                 blur={0}
                 bgImage={require('../../images/parallax/parallax2.jpg')}
@@ -63,7 +63,7 @@ export default class MainPage extends Component {
           </Parallax>
         </ScrollableSection>
 
-        <ScrollableSection name={'bw'}>
+        <ScrollableSection name={'bw_section'}>
           <Parallax
                 blur={0}
                 bgImage={require('../../images/parallax/parallax3.jpg')}
@@ -80,7 +80,7 @@ export default class MainPage extends Component {
           </Parallax>
         </ScrollableSection>
 
-        <ScrollableSection name={'portraits'}>
+        <ScrollableSection name={'portraits_section'}>
           <Parallax
                 blur={0}
                 bgImage={require('../../images/parallax/parallax4.jpg')}
@@ -97,7 +97,7 @@ export default class MainPage extends Component {
           </Parallax>
         </ScrollableSection>
 
-        <ScrollableSection name={'projects'}>
+        <ScrollableSection name={'projects_section'}>
           <Parallax
                 blur={0}
                 bgImage={require('../../images/parallax/parallax5.jpg')}
@@ -108,7 +108,7 @@ export default class MainPage extends Component {
               <Fade bottom>
                 <div className="parallax-secondary-section">
                   <h2 className="parallax-title">Art Projects</h2>
-                  <Link to="/gallery/images_shamans"><button className="btn">Browse Projects</button></Link>
+                  <Link to="/projects/overview"><button className="btn">Open Projects</button></Link>
                 </div>  
               </Fade>      
           </Parallax>
