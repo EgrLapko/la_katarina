@@ -856,7 +856,7 @@ a {
       cursor: pointer;
       position: absolute;
       top: 6rem;
-      left: 3rem;
+      left: 6rem;
       -webkit-transition: .2s;
       -o-transition: .2s;
       transition: .2s; }
@@ -925,33 +925,35 @@ a {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start; }
-      .single-project-page .single-project .projects-gallery .project-image-container {
-        cursor: pointer;
-        width: 100%;
-        overflow: hidden;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        .single-project-page .single-project .projects-gallery .project-image-container img {
+        .single-project-page .single-project .projects-gallery .project-column .project-image-container {
+          cursor: pointer;
           width: 100%;
-          -webkit-filter: brightness(0.9);
-          filter: brightness(0.9);
-          -webkit-filter: saturate(0);
-          filter: saturate(0);
-          -webkit-transition: 1s;
-          -o-transition: 1s;
-          transition: 1s; }
-      .single-project-page .single-project .projects-gallery .project-image-container:hover img {
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        -webkit-filter: brightness(1);
-        filter: brightness(1);
-        -webkit-filter: saturate(1);
-        filter: saturate(1); }
+          overflow: hidden;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .single-project-page .single-project .projects-gallery .project-column .project-image-container img {
+            width: 100%;
+            -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
+            -webkit-filter: saturate(0);
+            filter: saturate(0);
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s; }
+        .single-project-page .single-project .projects-gallery .project-column .project-image-container:hover img {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+          -webkit-filter: brightness(1);
+          filter: brightness(1);
+          -webkit-filter: saturate(1);
+          filter: saturate(1); }
+    .single-project-page .single-project .ukr-gallery {
+      background-color: white; }
