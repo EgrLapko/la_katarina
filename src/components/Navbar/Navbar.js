@@ -29,8 +29,8 @@ export default class Navbar extends Component {
                       <h2 className="menu-category">-Projects-</h2>
                       <Link to="/projects/overview"><p className="menu-option projects-link">Projects Page</p></Link>
                       <Link to="/projects/overview/shamans"><p className="menu-option">Shamans</p></Link>
-                      <Link to="/"><p className="menu-option">Steampunk</p></Link>
-                      <Link to="/"><p className="menu-option">Ukrainian Beauties</p></Link>
+                      <Link to="/projects/overview/ukrainian_beauty"><p className="menu-option">Ukrainian Beauties</p></Link>
+                      <Link to="/projects/overview/steampunk"><p className="menu-option">Steampunk</p></Link>
                     </div>
                     <div className="menu-item">
                       <h2 className="menu-category">-About Me-</h2>

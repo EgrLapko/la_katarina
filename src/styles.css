@@ -37,6 +37,22 @@ a {
 .btn:focus {
   outline: none; }
 
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%); }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%); }
+  100% {
+    opacity: 1; } }
+
 .hamburger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +168,8 @@ a {
         transition: .3s; }
       .navbar .nav-menus .menu-item .projects-link {
         font-size: 1.9rem;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9); }
       .navbar .nav-menus .menu-item .menu-option:hover {
         color: rgba(255, 255, 255, 0.9); }
 
@@ -361,20 +378,39 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start; }
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 2rem; }
     .about-page .info-box .image-section {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 4rem;
-      margin-right: auto;
-      margin-left: 3rem;
-      margin-top: 1rem;
-      width: 50rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 30rem;
       padding: 1rem; }
       .about-page .info-box .image-section img {
-        width: 100%; }
+        width: 100%;
+        border-radius: 50%; }
+    .about-page .info-box .about-name {
+      text-transform: uppercase;
+      font-size: 5rem;
+      line-height: 3.5rem;
+      font-weight: 200;
+      font-family: "Montserrat", sans-serif;
+      color: rgba(37, 36, 37, 0.9);
+      margin: 0;
+      margin-top: 2rem;
+      cursor: default; }
+      .about-page .info-box .about-name span {
+        font-weight: 800; }
     .about-page .info-box .info-section {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -391,19 +427,13 @@ a {
       flex-direction: column;
       -webkit-box-align: start;
       -ms-flex-align: start;
-      align-items: flex-start; }
-      .about-page .info-box .info-section .about-name {
-        text-transform: uppercase;
-        font-size: 5rem;
-        line-height: 3.5rem;
-        font-weight: 200;
+      align-items: flex-start;
+      width: 40%;
+      padding: 2rem; }
+      .about-page .info-box .info-section .bio-text {
+        color: #252425;
         font-family: "Montserrat", sans-serif;
-        color: rgba(37, 36, 37, 0.9);
-        margin: 0;
-        margin-top: 2rem;
-        cursor: default; }
-        .about-page .info-box .info-section .about-name span {
-          font-weight: 800; }
+        font-size: 1.1rem; }
 
 .gallery-main-container {
   display: -webkit-box;
@@ -782,7 +812,9 @@ a {
     align-items: flex-start;
     width: 100%;
     -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    justify-content: space-around;
+    -webkit-animation: fade-out 1s;
+    animation: fade-out 1s; }
     .projects-page .projects-container .project-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -846,6 +878,8 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-animation: fade-out 1s;
+    animation: fade-out 1s;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

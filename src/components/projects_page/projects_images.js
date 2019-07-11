@@ -131,6 +131,54 @@ const projects_images = [
         project: "ukrainian",
         position: "ukrainian column 3"
     },
+    {
+        src: '/images/Projects/Pictures/steampunk/1.jpg',
+        id: 23,
+        project: "steampunk",
+        position: "steampunk column 1"
+    },
+    {
+        src: '/images/Projects/Pictures/steampunk/2.jpg',
+        id: 24,
+        project: "steampunk",
+        position: "steampunk column 1"
+    },
+    {
+        src: '/images/Projects/Pictures/steampunk/3.jpg',
+        id: 25,
+        project: "steampunk",
+        position: "steampunk column 1"
+    },
+    {
+        src: '/images/Projects/Pictures/steampunk/4.jpg',
+        id: 26,
+        project: "steampunk",
+        position: "steampunk column 2"
+    },
+    {
+        src: '/images/Projects/Pictures/steampunk/5.jpg',
+        id: 27,
+        project: "steampunk",
+        position: "steampunk column 2"
+    },
+    {
+        src: '/images/Projects/Pictures/steampunk/6.jpg',
+        id: 28,
+        project: "steampunk",
+        position: "steampunk column 2"
+    },
+    {
+        src: '/images/Projects/Pictures/steampunk/7.jpg',
+        id: 29,
+        project: "steampunk",
+        position: "steampunk column 3"
+    },
+    {
+        src: '/images/Projects/Pictures/steampunk/8.jpg',
+        id: 30,
+        project: "steampunk",
+        position: "steampunk column 3"
+    },
 ];
 
 export default projects_images;

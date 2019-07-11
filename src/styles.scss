@@ -49,6 +49,17 @@ a {
     outline: none;
 }
 
+@keyframes fade-out {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 // ------------------------- NAVBAR
 .hamburger{
     @include flexbox;
@@ -123,6 +134,7 @@ a {
             .projects-link {
                 font-size: 1.9rem;
                 text-transform: uppercase;
+                color: rgba(255, 255, 255, .9);
             }
             .menu-option:hover {
                 color: rgba(255, 255, 255, .9);
@@ -299,36 +311,42 @@ a {
     background-color: rgba(255, 255, 255, 1);
     .info-box{
         @include flexbox;
-        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 2rem;
         .image-section {
-            position: sticky;
-            top: 4rem;
-            margin-right: auto;
-            margin-left: 3rem;
-            margin-top: 1rem;
-            width: 50rem;
+            @include flexbox;
+            width: 30rem;
             padding: 1rem;
             img {
                 width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .about-name {
+            text-transform: uppercase;
+            font-size: 5rem;
+            line-height: 3.5rem;
+            font-weight: 200;
+            font-family: $secondaryFont;
+            color: rgba(37, 36, 37, .9);
+            margin: 0;
+            margin-top: 2rem;
+            cursor: default;
+            span {
+                font-weight: 800;
             }
         }
         .info-section {
             @include flexbox;
             flex-direction: column;
             align-items: flex-start;
-            .about-name {
-                text-transform: uppercase;
-                font-size: 5rem;
-                line-height: 3.5rem;
-                font-weight: 200;
+            width: 40%;
+            padding: 2rem; 
+            .bio-text {
+                color: rgba(37, 36, 37, 1);
                 font-family: $secondaryFont;
-                color: rgba(37, 36, 37, .9);
-                margin: 0;
-                margin-top: 2rem;
-                cursor: default;
-                span {
-                    font-weight: 800;
-                }
+                font-size: 1.1rem;
             }
         }
     }
@@ -618,6 +636,7 @@ a {
         align-items: flex-start;
         width: 100%;
         justify-content: space-around;
+        animation: fade-out 1s;
         .project-item {
             @include flexbox;
             flex-direction: column;
@@ -651,8 +670,10 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     background-color: rgba(255, 255, 255, 1);
+    
     .single-project {
         @include flexbox;
+        animation: fade-out 1s;
         flex-direction: column;
         .dark-btn {
             color: rgba(37, 36, 37, .9);

@@ -80,6 +80,40 @@ export default class SingleProject extends Component {
                         </div>
                     </div>             
                 } />
+
+                <Route path = {`${match.path}/steampunk`} render={() =>  
+                    <div className="single-project">
+                        <Link to="/projects/overview"><button className="btn dark-btn">Back to Projects</button></Link>
+                        <ProjectTitle title = "Steampunk Project" />
+                        <SingleDescription desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                        <div className="projects-gallery ukr-gallery">
+                            <div className="project-column ukr-image">
+                                {projects_images.map(image => image.position === "steampunk column 1" && 
+                                    <SingleImage
+                                        key = {image.id}
+                                        src = {image.src}
+                                    />
+                                )}
+                            </div>
+                            <div className="project-column ukr-image">
+                                {projects_images.map(image => image.position === "steampunk column 2" && 
+                                    <SingleImage
+                                        key = {image.id}
+                                        src = {image.src}
+                                    />
+                                )}
+                            </div>
+                            <div className="project-column ukr-image">
+                                {projects_images.map(image => image.position === "steampunk column 3" && 
+                                    <SingleImage
+                                        key = {image.id}
+                                        src = {image.src}
+                                    />
+                                )}
+                            </div>
+                        </div>
+                    </div>             
+                } />
                 
             </div>       
         )
