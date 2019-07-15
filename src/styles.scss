@@ -49,10 +49,33 @@ a {
     outline: none;
 }
 
+.dark-btn {
+    color: rgba(37, 36, 37, .9);
+    border: 1px solid rgba(37, 36, 37, .2);
+    cursor: pointer;
+    transition: .2s;
+    font-size: 1rem;
+    padding: .7rem;
+    .fa-chevron-left {
+        color: rgba(37, 36, 37, .9);
+        font-size: 1rem;
+        margin-right: .3rem;
+        transition: .2s;
+    }
+}
+.dark-btn:hover {
+    color: rgba(255, 255, 255, .9);
+    background-color: rgba(37, 36, 37, 1);
+    border: 1px solid rgba(255, 255, 255, .9);
+    .fa-chevron-left {
+        color: rgba(255, 255, 255, .9);
+    }
+}
+
 @keyframes fade-out {
     0% {
         opacity: 0;
-        transform: translateY(10%);
+        // transform: translateY(10%);
     }
     100% {
         opacity: 1;
@@ -121,7 +144,7 @@ a {
             flex-direction: column;
             .menu-category {
                 font-family: $secondaryFont;
-                font-size: 4.5rem;
+                font-size: 3.5rem;
                 color: rgba(255, 255, 255, 1);
                 font-weight: 200;
                 text-transform: uppercase;
@@ -132,7 +155,7 @@ a {
             .menu-option {
                 margin: 0;
                 font-family: $secondaryFont;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 text-transform: uppercase;
                 color: rgba(255, 255, 255, .7);
                 padding: .3rem;
@@ -141,9 +164,10 @@ a {
                 transition: .3s;
             }
             .projects-link {
-                font-size: 1.9rem;
+                font-size: 1.5rem;
                 text-transform: uppercase;
-                color: rgba(255, 255, 255, .9);
+                color: rgba(255, 255, 255, 1);
+                padding: .5rem;
             }
             .menu-option:hover {
                 color: rgba(255, 255, 255, .9);
@@ -313,52 +337,63 @@ a {
 
 // ------------------------- About 
 
-.about-page {
+.about-page-wrapper {
     @include flexbox;
     justify-content: flex-start;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 1);
-    .info-box{
+    .about-page {
         @include flexbox;
-        width: 100%;
         flex-direction: column;
-        margin-top: 2rem;
-        .image-section {
+        animation: fade-out .7s;
+        .info-box{
             @include flexbox;
-            width: 30rem;
-            padding: 1rem;
-            img {
-                width: 100%;
-                border-radius: 50%;
-            }
-        }
-        .about-name {
-            text-transform: uppercase;
-            font-size: 5rem;
-            line-height: 3.5rem;
-            font-weight: 200;
-            font-family: $secondaryFont;
-            color: rgba(37, 36, 37, .9);
-            margin: 0;
-            margin-top: 2rem;
-            cursor: default;
-            span {
-                font-weight: 800;
-            }
-        }
-        .info-section {
-            @include flexbox;
+            width: 100%;
             flex-direction: column;
-            align-items: flex-start;
-            width: 40%;
-            padding: 2rem; 
-            .bio-text {
-                color: rgba(37, 36, 37, 1);
+            margin-top: 2rem;
+            .image-section {
+                @include flexbox;
+                width: 20rem;
+                padding: 1rem;
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .about-name {
+                text-transform: uppercase;
+                font-size: 4rem;
+                line-height: 4rem;
+                font-weight: 200;
                 font-family: $secondaryFont;
-                font-size: 1.1rem;
+                color: rgba(37, 36, 37, .9);
+                margin: 0;
+                margin-top: 2rem;
+                cursor: default;
+                span {
+                    font-weight: 800;
+                }
+            }
+            .dark-btn {
+                margin-top: 2rem;
+            }
+            .info-section {
+                @include flexbox;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 50%;
+                padding: 1rem; 
+                .bio-text {
+                    color: rgba(37, 36, 37, 1);
+                    font-family: $secondaryFont;
+                    font-size: 1.2rem;
+                    .abzac {
+                        margin-left: 2rem;
+                    }
+                }
             }
         }
-    }
+    }   
 }
 
 // ------------------------- Gallery
@@ -690,26 +725,8 @@ a {
         animation: fade-out 1s;
         flex-direction: column;
         .dark-btn {
-            color: rgba(37, 36, 37, .9);
-            // border: 1px solid rgba(37, 36, 37, .2);
-            cursor: pointer;
-            transition: .2s;
-            font-size: 1rem;
-            padding: .7rem;
-            margin-top: 3rem;
-            .fa-chevron-left {
-                color: rgba(37, 36, 37, .9);
-                font-size: 1rem;
-                margin-right: .3rem;
-                transition: .2s;
-            }
-        }
-        .dark-btn:hover {
-            color: rgba(255, 255, 255, .9);
-            background-color: rgba(37, 36, 37, 1);
-            .fa-chevron-left {
-                color: rgba(255, 255, 255, .9);
-            }
+            margin-top: 5rem;
+            border: 1px solid rgba(255, 255, 255, 0);
         }
         .single-title {
             font-size: 4rem;
@@ -739,7 +756,7 @@ a {
             width: 90%;
             flex-wrap: wrap;
             margin: 0;
-            // background-color: rgba(37, 36, 37, 1);
+            margin-bottom: 3rem;
             .project-column {
                 @include flexbox;
                 flex-direction: column;
@@ -752,8 +769,7 @@ a {
                     margin: .15rem;
                     img {
                         width: 100%;
-                        filter: brightness(0.9);
-                        filter: saturate(0);
+                        // filter: brightness(0.9);
                         transition: 1s;
                     }
                 }
@@ -761,21 +777,25 @@ a {
                     img {
                         transform: scale(1.1);
                         filter: brightness(1);
-                        filter: saturate(1);
                     }
                 }
             }  
-            // .ukr-image {
-            //     .project-image-container {
-            //         img {
-            //             filter: saturate(1);
-            //         }
-            //     }
-            // }
         }
-        .ukr-gallery {
-            background-color: rgba(255, 255, 255, 1);
-        }
+    }
+    .shamans-back {
+        background-image: url('./images/projects_back/shamans.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .ukr-back {
+        background-image: url('./images/projects_back/ukrainian.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .steampunk-back {
+        background-image: url('./images/projects_back/steampunk.jpg');
+        background-attachment: fixed;
+        background-size: cover;
     }
 }
 
@@ -814,3 +834,54 @@ a {
       animation: modal-open .7s;
   }
 
+
+// ------------------------- Contact
+.contact-page-wrapper {
+    @include flexbox;
+    min-height: 100vh;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 1);
+    .contact-page {
+        @include flexbox;
+        flex-direction: column;
+        animation: fade-out .7s;
+        .image-section {
+            width: 15rem;
+            margin-top: 2rem;
+            .contact-image {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .dark-btn {
+            margin-top: 2rem;
+        }
+        .contact-cont, .contact-socials {
+            @include flexbox;
+            flex-direction: column;
+            margin-top: 2rem;
+            .cont-text {
+                font-family: $secondaryFont;
+                font-size: 1.4rem;
+                margin: 0;
+                .bold-text {
+                    font-weight: 600;
+                }
+            }
+            .uppercase {
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+        }
+        .contact-socials {
+            flex-direction: row;
+            margin: 0;
+            i {
+                font-size: 3rem;
+                margin: 1rem 1rem;
+                cursor: pointer;
+                color: rgba(37, 36, 37, .7);
+            }
+        }
+    }  
+}

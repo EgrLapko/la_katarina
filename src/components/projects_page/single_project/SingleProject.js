@@ -22,7 +22,7 @@ export default class SingleProject extends Component {
 
                                 <Route path = {`${match.path}/shamans`} render={() => 
                                     <React.Fragment>
-                                        <div className="single-project">
+                                        <div className="single-project shamans-back">
                                             <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>Back to Projects</button></Link>
                                             <ProjectTitle title = "Shamans" />
                                             <SingleDescription desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
@@ -63,7 +63,7 @@ export default class SingleProject extends Component {
 
                                 <Route path = {`${match.path}/ukrainian_beauty`} render={() =>  
                                     <React.Fragment>
-                                        <div className="single-project">
+                                        <div className="single-project ukr-back">
                                             <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>Back to Projects</button></Link>
                                             <ProjectTitle title = "Ukrainian Beauty" />
                                             <SingleDescription desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
@@ -103,7 +103,7 @@ export default class SingleProject extends Component {
 
                                 <Route path = {`${match.path}/steampunk`} render={() =>  
                                     <React.Fragment>
-                                        <div className="single-project">
+                                        <div className="single-project steampunk-back">
                                             <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>Back to Projects</button></Link>
                                             <ProjectTitle title = "Steampunk Project" />
                                             <SingleDescription desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />

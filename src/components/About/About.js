@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class About extends Component {
   componentDidMount() {
@@ -6,23 +7,26 @@ export default class About extends Component {
   }
   render() {
     return (
-      <div className="about-page">
-        <h2 className="title">About me</h2>
-        
-        <div className="info-box">
-          <div className="image-section">   
-            <img src="../images/katarina.jpg" alt=""/>
-          </div>
-          <h2 className="about-name">My name is <span>Katarina</span></h2>
-          <div className="info-section">
-            <p className="bio-text">
-            <span></span>I am a photographer from Ukraine, now based in Beijing (China). I am happy to introduce my art here. <br/>Its a mixture of photography, digital art and my dreams. Around 10 years I have been working professionally in the photographic field. I think that ordinary studio photography is a little bit boring, its just some kind of hunting for the fake emotion. But! If you can create some kind of story or interesting character using skills of post production and then build your own world - that is really amazing. 
-            I am just trying to create a mood in the best way I feel. Welcome!
-            I make another - a fabulous reality. There are no rules here. With the help of thoughts, fantasies and images, you can create new moods. We all live in the wild rhythms of big cities, forgetting in a hurry about miracles. I would like to share a part of my fantasies, at least for a moment try to stop the usual flow of time and give a person the opportunity to dream a little
-            </p>
+      <div className="about-page-wrapper">
+        <div className="about-page">
+          <h2 className="title">About me</h2>
+          <div className="info-box">
+            <div className="image-section">   
+              <img src="../images/katarina.jpg" alt=""/>
+            </div>
+            <h2 className="about-name">| <span>Katarina</span>Blazhievskaya |</h2>
+            <Link to="/contact"><button className="btn dark-btn">Contact Me</button></Link>
+            <div className="info-section">
+              <p className="bio-text">
+                <span className="abzac"/>I am a photographer from Ukraine, now based in Beijing, China. Glad to introduce you my artworks here. I do fine-art photography, my works are a mixture of classical photography, digital editing, and some particles, that were taken out of dreams. <br/>
+                <span className="abzac"/>I`ve been working in the photographic field around 10 years. At some moment of time I`ve understood that ordinary studio photography is not for me, that it`s a bit boring, because I felt that it was just some kind of neverending hunting for the fake emotion. <br/> 
+                <span className="abzac"/>I understood that being able to create your own story, create your own character with unspoking background, and then, using the skills of post-production, materialize it and build your own world - that is really amazing. <br/>
+                <span className="abzac"/>I make another, dreamlike-reality. Here is no rules, no restrictions. <br/>
+                We all live in the wild rhytms of a big cities, and in this chaos and continious hurry we`re forgetting about miracles. And what I want to do is just share a part of these miracles and, at least for a moment, try to stop this crazy flow of time, and give somebody a moment to dream for a while.
+              </p>
+            </div>
           </div>
         </div>
-        
       </div>
     )
   }
