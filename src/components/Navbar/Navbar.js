@@ -8,7 +8,7 @@ export default class Navbar extends Component {
     return (
       <ContextConsumer>
         {value => {
-          const { handleNavMenu, navMenu } = value;
+          const { handleNavMenu, navMenu, toggleBackCompart, toggleBackBw, toggleBackPortraits } = value;
           return (
             <React.Fragment>
                 <div className="hamburger">
@@ -21,9 +21,9 @@ export default class Navbar extends Component {
                   <div className="nav-menus">
                     <div className="menu-item">
                       <h2 className="menu-category">Gallery</h2>
-                      <Link to="/gallery/images_compart"><p className="menu-option">Computer Art</p></Link>
-                      <Link to="/gallery/images_portraits"><p className="menu-option">Portraits</p></Link>
-                      <Link to="/gallery/images_bw"><p className="menu-option">B/W images</p></Link>
+                      <Link to="/gallery/images_compart"><p className="menu-option" onClick={toggleBackCompart}>Computer Art</p></Link>
+                      <Link to="/gallery/images_bw"><p className="menu-option" onClick={toggleBackBw}>B/W images</p></Link>
+                      <Link to="/gallery/images_portraits"><p className="menu-option" onClick={toggleBackPortraits}>Portraits</p></Link>
                     </div>
                     <div className="menu-item">
                       <h2 className="menu-category">Projects</h2>

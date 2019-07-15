@@ -18,11 +18,11 @@ export default class About extends Component {
             <Link to="/contact"><button className="btn dark-btn">Contact Me</button></Link>
             <div className="info-section">
               <p className="bio-text">
-                <span className="abzac"/>I am a photographer from Ukraine, now based in Beijing, China. Glad to introduce you my artworks here. I do fine-art photography, my works are a mixture of classical photography, digital editing, and some particles, that were taken out of dreams. <br/>
-                <span className="abzac"/>I`ve been working in the photographic field around 10 years. At some moment of time I`ve understood that ordinary studio photography is not for me, that it`s a bit boring, because I felt that it was just some kind of neverending hunting for the fake emotion. <br/> 
+                <span className="abzac"/>I am a photographer from Ukraine, now based in Beijing, China. I'm happy to show you my artworks here. I do fine-art photography, my works are a mixture of classical photography, digital editing, and some particles, that were taken out of dreams. <br/>
+                <span className="abzac"/>I`ve been working within the photographic field over 10 years. I realized once that ordinary studio photography is not for me, that it`s a bit boring, because I felt that it was just some kind of neverending hunting for the fake emotion. <br/> 
                 <span className="abzac"/>I understood that being able to create your own story, create your own character with unspoking background, and then, using the skills of post-production, materialize it and build your own world - that is really amazing. <br/>
-                <span className="abzac"/>I make another, dreamlike-reality. Here is no rules, no restrictions. <br/>
-                We all live in the wild rhytms of a big cities, and in this chaos and continious hurry we`re forgetting about miracles. And what I want to do is just share a part of these miracles and, at least for a moment, try to stop this crazy flow of time, and give somebody a moment to dream for a while.
+                <span className="abzac"/>I make another, dreamlike-reality. Here are no rules, no restrictions. <br/>
+                We all live in the wild rhytms of big cities, and in this chaos and continious hurry we`re forgetting about miracles. And what I want to do is just share a part of these miracles and, at least for a moment, try to stop this crazy flow of time, and give somebody a moment to dream for a while.
               </p>
             </div>
           </div>

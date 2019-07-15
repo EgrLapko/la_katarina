@@ -400,15 +400,15 @@ a {
 
 .gallery-main-container {
     @include flexbox;
+    background-color: rgba(255, 255, 255, 1);
     .gallery-inner-container {
         @include flexbox;
         flex-direction: column;
-        width: 100%;
-        background-color: rgba(37, 36, 37, .8);
+        width: 100%;    
             .gallery-main-textbox{
                 @include flexbox;
                 width: 100%;
-                background-color: rgba(255, 255, 255, 1);
+                // background-color: rgba(255, 255, 255, 1);
                 flex-direction: column;
                 height: 25vh;
             .gallery-title{
@@ -490,7 +490,9 @@ a {
             width: 100%;
             overflow: hidden;
             flex-direction: column;
-            background-color: rgba(255, 255, 255, 1);
+            // background-color: rgba(255, 255, 255, 1);
+            background-size: cover;
+            background-attachment: fixed;
             h2 {
                 text-align: center;
                 font-size: 2rem;
@@ -505,8 +507,8 @@ a {
                 @include flexbox;
                 align-items: flex-start;
                 .gallery-column {
-                    flex: 25%;
-                    max-width: 25%;
+                    flex: 33.3%;
+                    max-width: 33.3%;
                 }
                 .img-container {
                     overflow: hidden; 
@@ -523,7 +525,7 @@ a {
                     }
                 }
                 .img-container:hover {
-                    border: 2px solid rgba(255, 255, 255, .6);
+                    border: 2px solid rgba(255, 255, 255, .0);
                 }
             }
             .gallery-mobile {
@@ -531,6 +533,22 @@ a {
             }
         }
     }  
+}
+
+.compart-back {
+    background-image: url('./images/gallery_back/compart_back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bw-back {
+    background-image: url('./images/gallery_back/bw_back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.portraits-back {
+    background-image: url('./images/gallery_back/portraits_back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 @media(max-width: 770px) {
@@ -727,6 +745,8 @@ a {
         .dark-btn {
             margin-top: 5rem;
             border: 1px solid rgba(255, 255, 255, 0);
+            position: relative;
+            z-index: 5;
         }
         .single-title {
             font-size: 4rem;
@@ -763,7 +783,7 @@ a {
                 align-items: flex-start;
                 .project-image-container {
                     cursor: pointer;
-                    width: 33rem;
+                    width: 35rem;
                     overflow: hidden;
                     @include flexbox;
                     margin: .15rem;
@@ -846,8 +866,8 @@ a {
         flex-direction: column;
         animation: fade-out .7s;
         .image-section {
-            width: 15rem;
-            margin-top: 2rem;
+            width: 20rem;
+            margin-top: 3rem;
             .contact-image {
                 width: 100%;
                 border-radius: 50%;
