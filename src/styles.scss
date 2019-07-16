@@ -105,12 +105,26 @@ a {
     top: 0;
     right: 2rem;
     z-index: 5;
+    .lang-menu {
+        @include flexbox;
+        margin-left: auto;
+        .lang-btn {
+            font-size: 1rem;
+            padding: .5rem;
+        }
+        .lang-active {
+            color: rgba(37, 36, 37, 1);
+            border: 1px solid rgba(37, 36, 37, 1);
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
     .fa-bars {
         cursor: pointer;
         border-radius: .4rem;
         text-align: center;
         width: 1.5rem;
         height: 1.5rem;
+        margin-left: 2rem;
     }
     .sign-logo {
         width: 10rem;

@@ -15,7 +15,7 @@ export default class MainPage extends Component {
     return (
       <ContextConsumer>
         {value => {
-          const { toggleBackCompart, toggleBackBw, toggleBackPortraits } = value;
+          const { toggleBackCompart, toggleBackBw, toggleBackPortraits, eng, } = value;
           return (
             <section className="page">
               <Fade>       

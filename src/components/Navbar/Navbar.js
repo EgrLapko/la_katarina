@@ -8,12 +8,16 @@ export default class Navbar extends Component {
     return (
       <ContextConsumer>
         {value => {
-          const { handleNavMenu, navMenu, toggleBackCompart, toggleBackBw, toggleBackPortraits } = value;
+          const { handleNavMenu, navMenu, toggleBackCompart, toggleBackBw, toggleBackPortraits, toggleENG, toggleCN, eng, cn } = value;
           return (
             <React.Fragment>
                 <div className="hamburger">
                   <div className="sign-logo">
                     <Link to="/"><img src={sign} alt="sign" /></Link>
+                  </div>
+                  <div className="lang-menu">
+                    <button className={"btn lang-btn " + (eng && "lang-active")} onClick={toggleENG} >EN</button>
+                    <button className={"btn lang-btn " + (cn && "lang-active")} onClick={toggleCN} >中文</button>
                   </div>
                   <i className="fas fa-bars" onClick={() => handleNavMenu()}></i>
                 </div>

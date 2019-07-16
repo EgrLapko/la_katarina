@@ -10,8 +10,29 @@ class ContextProvider extends Component {
         imageId: '',
         compartGallery: false,
         bwGallery: false,
-        portraitGallery: false
+        portraitGallery: false,
+        eng: true,
+        cn: false
     }
+
+// ---------------------------------- LANGUAGE CHANGING
+
+toggleENG = () => {
+    this.setState({
+        eng: true,
+        cn: false
+    })
+}
+
+toggleCN = () => {
+    this.setState({
+        cn: true,
+        eng: false
+        
+    })
+}
+
+// ----------------------------------
 
 handleNavMenu = () => {
     this.setState({
@@ -60,7 +81,9 @@ toggleBackPortraits = () => {
                 handleModal: this.handleModal,
                 toggleBackCompart: this.toggleBackCompart,
                 toggleBackBw: this.toggleBackBw,
-                toggleBackPortraits: this.toggleBackPortraits
+                toggleBackPortraits: this.toggleBackPortraits,
+                toggleENG: this.toggleENG,
+                toggleCN: this.toggleCN
             }}>
                 {this.props.children}
             </MainContext.Provider>

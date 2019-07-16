@@ -107,12 +107,31 @@ a {
   top: 0;
   right: 2rem;
   z-index: 5; }
+  .hamburger .lang-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto; }
+    .hamburger .lang-menu .lang-btn {
+      font-size: 1rem;
+      padding: .5rem; }
+    .hamburger .lang-menu .lang-active {
+      color: #252425;
+      border: 1px solid #252425;
+      background-color: white; }
   .hamburger .fa-bars {
     cursor: pointer;
     border-radius: .4rem;
     text-align: center;
     width: 1.5rem;
-    height: 1.5rem; }
+    height: 1.5rem;
+    margin-left: 2rem; }
   .hamburger .sign-logo {
     width: 10rem;
     margin-left: 3rem;
