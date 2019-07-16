@@ -2,6 +2,15 @@ $mainDark: rgba(37, 36, 37, 1);
 $mainFont: 'Raleway', sans-serif;
 $secondaryFont: 'Montserrat', sans-serif;
 
+.branch {
+    position: fixed;
+    bottom: -5rem;
+    right: -20rem;
+    width: 60rem;
+    z-index: 5;
+    filter: blur(5px);
+}
+
 @mixin flexbox {
     display: flex;
     justify-content: center;

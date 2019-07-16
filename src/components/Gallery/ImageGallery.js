@@ -5,6 +5,7 @@ import { ContextConsumer } from '../../context/context';
 
 import Photo from './Photo';
 import photos from '../../photos';
+import ModalImage from '../projects_page/single_project/ModalImage';
 
 
 export default class ImageGallery extends Component {
@@ -30,9 +31,7 @@ export default class ImageGallery extends Component {
                     <div className="gallery-categories">
                       <NavLink to={`${match.url}/images_compart`} activeClassName="active-submenu" onClick={toggleBackCompart}><p>Computer Art</p></NavLink>
                       <NavLink to={`${match.url}/images_bw`} activeClassName="active-submenu" onClick={toggleBackBw}><p>Black and White</p></NavLink>
-                      <NavLink to={`${match.url}/images_portraits`} activeClassName="active-submenu" onClick={toggleBackPortraits}><p>Portraits</p></NavLink>
-                      {/* <NavLink to={`${match.url}/images_shamans`} activeClassName="active-submenu"><p>Shamans</p></NavLink> */}
-                    </div>
+                      <NavLink to={`${match.url}/images_portraits`} activeClassName="active-submenu" onClick={toggleBackPortraits}><p>Portraits</p></NavLink>                    </div>
                   </Fade>    
                 </div>
                 
@@ -46,6 +45,7 @@ export default class ImageGallery extends Component {
                           src = {picture.src}
                           title = {picture.title}
                           key = {picture.index}
+                          imgId = {picture.index}
                         />)}
                       </div>
                       <div className ="gallery-column">
@@ -53,6 +53,7 @@ export default class ImageGallery extends Component {
                           src = {picture.src}
                           title = {picture.title}
                           key = {picture.index}
+                          imgId = {picture.index}
                         />)}
                       </div>
                       <div className ="gallery-column">
@@ -60,6 +61,7 @@ export default class ImageGallery extends Component {
                           src = {picture.src}
                           title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                       </div>
                     </div>
@@ -68,9 +70,11 @@ export default class ImageGallery extends Component {
                           src = {picture.src}
                           title = {picture.title}
                           key = {picture.index}
+                          imgId = {picture.index}
                         />)}
                     </div>
-                  </Fade>  
+                  </Fade> 
+                  <ModalImage /> 
                 </div>       
                 } />
         
@@ -84,6 +88,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                         <div className ="gallery-column">
@@ -91,6 +96,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                         <div className ="gallery-column">
@@ -98,6 +104,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                     </div>
@@ -106,9 +113,11 @@ export default class ImageGallery extends Component {
                           src = {picture.src}
                           title = {picture.title}
                           key = {picture.index}
+                          imgId = {picture.index}
                         />)}
                     </div>
-                    </Fade>        
+                    </Fade>  
+                    <ModalImage />      
                 </div>
                 } />
         
@@ -122,6 +131,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                         <div className ="gallery-column">
@@ -129,6 +139,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                         <div className ="gallery-column">
@@ -136,6 +147,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                     </div>
@@ -144,9 +156,11 @@ export default class ImageGallery extends Component {
                           src = {picture.src}
                           title = {picture.title}
                           key = {picture.index}
+                          imgId = {picture.index}
                         />)}
                     </div>
-                    </Fade>        
+                    </Fade> 
+                    <ModalImage />       
                 </div>
                 } />
         
@@ -160,6 +174,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                         <div className ="gallery-column">
@@ -167,6 +182,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                         <div className ="gallery-column">
@@ -174,6 +190,7 @@ export default class ImageGallery extends Component {
                             src = {picture.src}
                             title = {picture.title}
                             key = {picture.index}
+                            imgId = {picture.index}
                         />)}
                         </div>
                     </div>
@@ -182,9 +199,11 @@ export default class ImageGallery extends Component {
                           src = {picture.src}
                           title = {picture.title}
                           key = {picture.index}
+                          imgId = {picture.index}
                         />)}
                     </div>
-                    </Fade>        
+                    </Fade>  
+                    <ModalImage />      
                   </div>
                 } />
                 
