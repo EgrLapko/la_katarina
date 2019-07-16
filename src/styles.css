@@ -1,12 +1,3 @@
-.branch {
-  position: fixed;
-  bottom: -5rem;
-  right: -20rem;
-  width: 60rem;
-  z-index: 5;
-  -webkit-filter: blur(5px);
-  filter: blur(5px); }
-
 body {
   margin: 0;
   padding: 0;

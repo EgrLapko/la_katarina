@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import ScrollableSection, { ScrollableLink } from 'react-scrollable-url';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import { ContextConsumer } from '../../context/context';
@@ -33,25 +33,25 @@ export default class MainPage extends Component {
                         <p>Photographer</p>
                       </div>         
                       <div className="genres-section">
-                        <ScrollableLink href="/compart_section">
+                        <a href="#compart_section">
                           <p>Computer art</p>
-                        </ScrollableLink>
-                        <ScrollableLink href="/bw_section">
+                        </a>
+                        <a href="#bw_section">
                           <p>B/W images</p>
-                        </ScrollableLink>
-                        <ScrollableLink href="/portraits_section">
+                        </a>
+                        <a href="#portraits_section">
                           <p>Portraits</p>
-                        </ScrollableLink>
-                        <ScrollableLink href="/projects_section">
+                        </a>
+                        <a href="#projects_section">
                           <p>Art projects</p>
-                        </ScrollableLink>
+                        </a>
                       </div>   
                     </div>
                   </Fade>        
                 </Parallax>
               </Fade>
 
-              <ScrollableSection name={'compart_section'}>
+              <ScrollableAnchor id={'compart_section'}>
                 <Parallax
                       blur={0}
                       bgImage={require('../../images/parallax/parallax2.jpg')}
@@ -66,9 +66,9 @@ export default class MainPage extends Component {
                       </div>          
                     </Fade>      
                 </Parallax>
-              </ScrollableSection>
+              </ScrollableAnchor>
 
-              <ScrollableSection name={'bw_section'}>
+              <ScrollableAnchor id={'bw_section'}>
                 <Parallax
                       blur={0}
                       bgImage={require('../../images/parallax/parallax3.jpg')}
@@ -83,9 +83,9 @@ export default class MainPage extends Component {
                       </div>  
                     </Fade>      
                 </Parallax>
-              </ScrollableSection>
+              </ScrollableAnchor>
 
-              <ScrollableSection name={'portraits_section'}>
+              <ScrollableAnchor id={'portraits_section'}>
                 <Parallax
                       blur={0}
                       bgImage={require('../../images/parallax/parallax4.jpg')}
@@ -100,9 +100,9 @@ export default class MainPage extends Component {
                       </div>  
                     </Fade>      
                 </Parallax>
-              </ScrollableSection>
+              </ScrollableAnchor>
 
-              <ScrollableSection name={'projects_section'}>
+              <ScrollableAnchor id={'projects_section'}>
                 <Parallax
                       blur={0}
                       bgImage={require('../../images/parallax/parallax5.jpg')}
@@ -117,7 +117,7 @@ export default class MainPage extends Component {
                       </div>  
                     </Fade>      
                 </Parallax>
-              </ScrollableSection>
+              </ScrollableAnchor>
             </section>
           )
         }}
