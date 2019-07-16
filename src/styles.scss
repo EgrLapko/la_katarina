@@ -93,6 +93,26 @@ a {
 
 
 // ------------------------- NAVBAR
+.lang-menu {
+    @include flexbox;
+    margin-left: auto;
+    position: fixed;
+    top: 0;
+    right: 5rem;
+    z-index: 5;
+    height: 4rem;
+    .lang-btn {
+        font-size: .9rem;
+        padding: .5rem;
+        font-family: $mainFont;
+    }
+    .lang-active {
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, .4);
+        background-color: rgba(37, 36, 37, 1);
+    }
+}
+
 .hamburger{
     @include flexbox;
     justify-content: space-between;
@@ -105,19 +125,6 @@ a {
     top: 0;
     right: 2rem;
     z-index: 5;
-    .lang-menu {
-        @include flexbox;
-        margin-left: auto;
-        .lang-btn {
-            font-size: 1rem;
-            padding: .5rem;
-        }
-        .lang-active {
-            color: rgba(37, 36, 37, 1);
-            border: 1px solid rgba(37, 36, 37, 1);
-            background-color: rgba(255, 255, 255, 1);
-        }
-    }
     .fa-bars {
         cursor: pointer;
         border-radius: .4rem;
@@ -387,6 +394,9 @@ a {
                 span {
                     font-weight: 800;
                 }
+            }
+            .cn-name {
+                font-size: 2rem;
             }
             .dark-btn {
                 margin-top: 2rem;

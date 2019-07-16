@@ -85,6 +85,31 @@ a {
   100% {
     opacity: 1; } }
 
+.lang-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: auto;
+  position: fixed;
+  top: 0;
+  right: 5rem;
+  z-index: 5;
+  height: 4rem; }
+  .lang-menu .lang-btn {
+    font-size: .9rem;
+    padding: .5rem;
+    font-family: "Raleway", sans-serif; }
+  .lang-menu .lang-active {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: #252425; }
+
 .hamburger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,24 +132,6 @@ a {
   top: 0;
   right: 2rem;
   z-index: 5; }
-  .hamburger .lang-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: auto; }
-    .hamburger .lang-menu .lang-btn {
-      font-size: 1rem;
-      padding: .5rem; }
-    .hamburger .lang-menu .lang-active {
-      color: #252425;
-      border: 1px solid #252425;
-      background-color: white; }
   .hamburger .fa-bars {
     cursor: pointer;
     border-radius: .4rem;
@@ -479,6 +486,8 @@ a {
         cursor: default; }
         .about-page-wrapper .about-page .info-box .about-name span {
           font-weight: 800; }
+      .about-page-wrapper .about-page .info-box .cn-name {
+        font-size: 2rem; }
       .about-page-wrapper .about-page .info-box .dark-btn {
         margin-top: 2rem; }
       .about-page-wrapper .about-page .info-box .info-section {

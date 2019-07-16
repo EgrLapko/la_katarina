@@ -4,6 +4,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import { ContextConsumer } from '../../context/context';
+import { chinese, english } from '../../language';
 
 export default class MainPage extends Component {
 
@@ -15,7 +16,7 @@ export default class MainPage extends Component {
     return (
       <ContextConsumer>
         {value => {
-          const { toggleBackCompart, toggleBackBw, toggleBackPortraits, eng, } = value;
+          const { toggleBackCompart, toggleBackBw, toggleBackPortraits, cn } = value;
           return (
             <section className="page">
               <Fade>       
@@ -29,21 +30,21 @@ export default class MainPage extends Component {
                   <Fade>
                     <div className="parallax-textbox">
                       <div className="titles-section">
-                        <h2>Katarina Blazhievskaya</h2>
-                        <p>Photographer</p>
+                        <h2>{cn ? chinese.section1Title : english.section1Title }</h2>
+                        <p>{cn ? chinese.section1SubTitle : english.section1SubTitle }</p>
                       </div>         
                       <div className="genres-section">
                         <a href="#compart_section">
-                          <p>Computer art</p>
+                          <p>{cn ? chinese.section1Menu1 : english.section1Menu1 }</p>
                         </a>
                         <a href="#bw_section">
-                          <p>B/W images</p>
+                          <p>{cn ? chinese.section1Menu2 : english.section1Menu2 }</p>
                         </a>
                         <a href="#portraits_section">
-                          <p>Portraits</p>
+                          <p>{cn ? chinese.section1Menu3 : english.section1Menu3 }</p>
                         </a>
                         <a href="#projects_section">
-                          <p>Art projects</p>
+                          <p>{cn ? chinese.section1Menu4 : english.section1Menu4 }</p>
                         </a>
                       </div>   
                     </div>
@@ -61,8 +62,8 @@ export default class MainPage extends Component {
                   >   
                     <Fade bottom>
                       <div className="parallax-secondary-section">
-                        <h2 className="parallax-title">Computer Art Images</h2>
-                        <Link to="/gallery/images_compart"><button className="btn" onClick={toggleBackCompart}>Browse Gallery</button></Link>
+                        <h2 className="parallax-title">{cn ? chinese.section2Title : english.section2Title}</h2>
+                        <Link to="/gallery/images_compart"><button className="btn" onClick={toggleBackCompart}>{cn ? chinese.section2SubTitle : english.section2SubTitle }</button></Link>
                       </div>          
                     </Fade>      
                 </Parallax>
@@ -78,8 +79,8 @@ export default class MainPage extends Component {
                   >   
                     <Fade bottom>
                       <div className="parallax-secondary-section">
-                        <h2 className="parallax-title">B/W Pictures</h2>
-                        <Link to="/gallery/images_bw"><button className="btn" onClick={toggleBackBw}>Browse Gallery</button></Link>
+                        <h2 className="parallax-title">{cn ? chinese.section3Title : english.section3Title }</h2>
+                        <Link to="/gallery/images_bw"><button className="btn" onClick={toggleBackBw}>{cn ? chinese.section3SubTitle : english.section3SubTitle }</button></Link>
                       </div>  
                     </Fade>      
                 </Parallax>
@@ -95,8 +96,8 @@ export default class MainPage extends Component {
                   >   
                     <Fade bottom>
                       <div className="parallax-secondary-section">
-                        <h2 className="parallax-title">Portraits</h2>
-                        <Link to="/gallery/images_portraits"><button className="btn" onClick={toggleBackPortraits}>Browse Gallery</button></Link>
+                        <h2 className="parallax-title">{cn ? chinese.section4Title : english.section4Title }</h2>
+                        <Link to="/gallery/images_portraits"><button className="btn" onClick={toggleBackPortraits}>{cn ? chinese.section4SubTitle : english.section4SubTitle }</button></Link>
                       </div>  
                     </Fade>      
                 </Parallax>
@@ -112,8 +113,8 @@ export default class MainPage extends Component {
                   >   
                     <Fade bottom>
                       <div className="parallax-secondary-section">
-                        <h2 className="parallax-title">Art Projects</h2>
-                        <Link to="/projects/overview"><button className="btn">Open Projects</button></Link>
+                        <h2 className="parallax-title">{cn ? chinese.section5Title : english.section5Title }</h2>
+                        <Link to="/projects/overview"><button className="btn">{cn ? chinese.section5SubTitle : english.section5SubTitle }</button></Link>
                       </div>  
                     </Fade>      
                 </Parallax>

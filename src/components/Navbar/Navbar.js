@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { ContextConsumer } from '../../context/context';
 import sign from '../../images/sign.png';
+import { chinese, english } from '../../language';
 
 export default class Navbar extends Component {
   render() {
@@ -15,31 +16,31 @@ export default class Navbar extends Component {
                   <div className="sign-logo">
                     <Link to="/"><img src={sign} alt="sign" /></Link>
                   </div>
-                  <div className="lang-menu">
-                    <button className={"btn lang-btn " + (eng && "lang-active")} onClick={toggleENG} >EN</button>
-                    <button className={"btn lang-btn " + (cn && "lang-active")} onClick={toggleCN} >中文</button>
-                  </div>
                   <i className="fas fa-bars" onClick={() => handleNavMenu()}></i>
+                </div>
+                <div className="lang-menu">
+                  <button className={"btn lang-btn " + (eng && "lang-active")} onClick={toggleENG} >EN</button>
+                  <button className={"btn lang-btn " + (cn && "lang-active")} onClick={toggleCN} >中文</button>
                 </div>
                 <nav className={"navbar " + (navMenu && "navbar-active")}>
                   <div className="nav-menus">
                     <div className="menu-item">
-                      <h2 className="menu-category">Gallery</h2>
-                      <Link to="/gallery/images_compart"><p className="menu-option" onClick={toggleBackCompart}>Computer Art</p></Link>
-                      <Link to="/gallery/images_bw"><p className="menu-option" onClick={toggleBackBw}>B/W images</p></Link>
-                      <Link to="/gallery/images_portraits"><p className="menu-option" onClick={toggleBackPortraits}>Portraits</p></Link>
+                      <h2 className="menu-category"> {cn ? chinese.navTitle1 : english.navTitle1 } </h2>
+                      <Link to="/gallery/images_compart"><p className="menu-option" onClick={toggleBackCompart}>{cn ? chinese.navTitle1Opt1 : english.navTitle1Opt1 }</p></Link>
+                      <Link to="/gallery/images_bw"><p className="menu-option" onClick={toggleBackBw}>{cn ? chinese.navTitle1Opt2 : english.navTitle1Opt2 }</p></Link>
+                      <Link to="/gallery/images_portraits"><p className="menu-option" onClick={toggleBackPortraits}>{cn ? chinese.navTitle1Opt3 : english.navTitle1Opt3 }</p></Link>
                     </div>
                     <div className="menu-item">
-                      <h2 className="menu-category">Projects</h2>
-                      <Link to="/projects/overview"><p className="menu-option projects-link">Projects Page</p></Link>
-                      <Link to="/projects/overview/shamans"><p className="menu-option">Shamans</p></Link>
-                      <Link to="/projects/overview/ukrainian_beauty"><p className="menu-option">Ukrainian Beauties</p></Link>
-                      <Link to="/projects/overview/steampunk"><p className="menu-option">Steampunk</p></Link>
+                      <h2 className="menu-category">{cn ? chinese.navTitle2 : english.navTitle2 }</h2>
+                      <Link to="/projects/overview"><p className="menu-option projects-link">{cn ? chinese.navTitle2Opt1 : english.navTitle2Opt1 }</p></Link>
+                      <Link to="/projects/overview/shamans"><p className="menu-option">{cn ? chinese.navTitle2Opt2 : english.navTitle2Opt2 }</p></Link>
+                      <Link to="/projects/overview/ukrainian_beauty"><p className="menu-option">{cn ? chinese.navTitle2Opt3 : english.navTitle2Opt3 }</p></Link>
+                      <Link to="/projects/overview/steampunk"><p className="menu-option">{cn ? chinese.navTitle2Opt4 : english.navTitle2Opt4 }</p></Link>
                     </div>
                     <div className="menu-item">
-                      <h2 className="menu-category">About Me</h2>
-                      <Link to="/about"><p className="menu-option">Bio</p></Link>
-                      <Link to="/contact"><p className="menu-option">Contact</p></Link>
+                      <h2 className="menu-category">{cn ? chinese.navTitle3 : english.navTitle3}</h2>
+                      <Link to="/about"><p className="menu-option">{cn ? chinese.navTitle3Opt1 : english.navTitle3Opt1 }</p></Link>
+                      <Link to="/contact"><p className="menu-option">{cn ? chinese.navTitle3Opt2 : english.navTitle3Opt2 }</p></Link>
                     </div>
                   </div>
                 </nav>

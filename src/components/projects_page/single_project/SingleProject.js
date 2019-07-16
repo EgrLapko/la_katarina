@@ -6,6 +6,7 @@ import projects_images from '../projects_images';
 import SingleImage from './SingleImage';
 import ModalImage from './ModalImage';
 import { ContextConsumer } from '../../../context/context';
+import { english, chinese } from '../../../language';
 
 export default class SingleProject extends Component {
     componentDidMount() {
@@ -16,6 +17,7 @@ export default class SingleProject extends Component {
         return (
             <ContextConsumer>
                 {value => {
+                    const { cn } = value;
                     return (
                         <React.Fragment>
                             <div className="single-project-page">
@@ -23,9 +25,9 @@ export default class SingleProject extends Component {
                                 <Route path = {`${match.path}/shamans`} render={() => 
                                     <React.Fragment>
                                         <div className="single-project shamans-back">
-                                            <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>Back to Projects</button></Link>
-                                            <ProjectTitle title = "Shamans" />
-                                            <SingleDescription desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                                            <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>{cn ? chinese.backToProjectsBtn : english.backToProjectsBtn}</button></Link>
+                                            <ProjectTitle title = {cn ? chinese.singleProjectTitle1 : english.singleProjectTitle1} />
+                                            <SingleDescription desc = {cn ? chinese.singleProjectDesc1 : english.singleProjectDesc1} />
                                             <div className="projects-gallery">
                                                 <div className="project-column">
                                                     {projects_images.map(image => image.position === "shamans column 1" && 
@@ -64,9 +66,9 @@ export default class SingleProject extends Component {
                                 <Route path = {`${match.path}/ukrainian_beauty`} render={() =>  
                                     <React.Fragment>
                                         <div className="single-project ukr-back">
-                                            <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>Back to Projects</button></Link>
-                                            <ProjectTitle title = "Ukrainian Beauty" />
-                                            <SingleDescription desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                                            <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>{cn ? chinese.backToProjectsBtn : english.backToProjectsBtn}</button></Link>
+                                            <ProjectTitle title = {cn ? chinese.singleProjectTitle2 : english.singleProjectTitle2}  />
+                                            <SingleDescription desc = {cn ? chinese.singleProjectDesc2 : english.singleProjectDesc12} />
                                             <div className="projects-gallery ukr-gallery">
                                                 <div className="project-column ukr-image">
                                                     {projects_images.map(image => image.position === "ukrainian column 1" && 
@@ -104,9 +106,9 @@ export default class SingleProject extends Component {
                                 <Route path = {`${match.path}/steampunk`} render={() =>  
                                     <React.Fragment>
                                         <div className="single-project steampunk-back">
-                                            <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>Back to Projects</button></Link>
-                                            <ProjectTitle title = "Steampunk Project" />
-                                            <SingleDescription desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                                            <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>{cn ? chinese.backToProjectsBtn : english.backToProjectsBtn}</button></Link>
+                                            <ProjectTitle title = {cn ? chinese.singleProjectTitle3 : english.singleProjectTitle3} />
+                                            <SingleDescription desc = {cn ? chinese.singleProjectDesc3 : english.singleProjectDesc13} />
                                             <div className="projects-gallery ukr-gallery">
                                                 <div className="project-column ukr-image">
                                                     {projects_images.map(image => image.position === "steampunk column 1" && 

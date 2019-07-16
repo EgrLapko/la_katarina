@@ -6,6 +6,7 @@ import { ContextConsumer } from '../../context/context';
 import Photo from './Photo';
 import photos from '../../photos';
 import ModalImage from '../projects_page/single_project/ModalImage';
+import { english, chinese } from '../../language';
 
 
 export default class ImageGallery extends Component {
@@ -21,23 +22,23 @@ export default class ImageGallery extends Component {
     return (
       <ContextConsumer>
         {value => {
-          const { compartGallery, bwGallery, portraitGallery, toggleBackCompart, toggleBackBw, toggleBackPortraits } = value;
+          const { compartGallery, bwGallery, portraitGallery, toggleBackCompart, toggleBackBw, toggleBackPortraits, cn } = value;
           return (
             <div className={"gallery-main-container " + (compartGallery ? "compart-back" : null || bwGallery ? "bw-back" : null || portraitGallery ? "portraits-back" : null )}>
               <div className="gallery-inner-container">
                 <div className="gallery-main-textbox">
                   <Fade>
-                    <h2 className="gallery-title">Image Gallery</h2>
+                    <h2 className="gallery-title">{cn ? chinese.galleryTitle : english.galleryTitle}</h2>
                     <div className="gallery-categories">
-                      <NavLink to={`${match.url}/images_compart`} activeClassName="active-submenu" onClick={toggleBackCompart}><p>Computer Art</p></NavLink>
-                      <NavLink to={`${match.url}/images_bw`} activeClassName="active-submenu" onClick={toggleBackBw}><p>Black and White</p></NavLink>
-                      <NavLink to={`${match.url}/images_portraits`} activeClassName="active-submenu" onClick={toggleBackPortraits}><p>Portraits</p></NavLink>                    </div>
+                      <NavLink to={`${match.url}/images_compart`} activeClassName="active-submenu" onClick={toggleBackCompart}><p>{cn ? chinese.galleryGenre1 : english.galleryGenre1}</p></NavLink>
+                      <NavLink to={`${match.url}/images_bw`} activeClassName="active-submenu" onClick={toggleBackBw}><p>{cn ? chinese.galleryGenre2 : english.galleryGenre2}</p></NavLink>
+                      <NavLink to={`${match.url}/images_portraits`} activeClassName="active-submenu" onClick={toggleBackPortraits}><p>{cn ? chinese.galleryGenre3 : english.galleryGenre3}</p></NavLink>                    </div>
                   </Fade>    
                 </div>
                 
                 <Route path = {`${match.path}/images_compart`} render={() =>  
                 <div className="images-container compart-container">
-                  <h2>Computer-Art</h2>
+                  <h2>{cn ? chinese.galleryGenre1 : english.galleryGenre1}</h2>
                   <Fade>
                     <div className="gallery">
                       <div className ="gallery-column">
@@ -80,7 +81,7 @@ export default class ImageGallery extends Component {
         
               <Route path = {`${match.path}/images_bw`} render={() =>  
                 <div className="images-container bw-container">
-                    <h2>Black and White</h2>
+                    <h2>{cn ? chinese.galleryGenre2 : english.galleryGenre2}</h2>
                     <Fade>
                     <div className="gallery">
                         <div className ="gallery-column">
@@ -123,7 +124,7 @@ export default class ImageGallery extends Component {
         
               <Route path = {`${match.path}/images_portraits`} render={() =>  
                 <div className="images-container portraits-container">
-                    <h2>Portraits</h2>
+                    <h2>{cn ? chinese.galleryGenre3 : english.galleryGenre3}</h2>
                     <Fade>
                     <div className="gallery">
                         <div className ="gallery-column">
@@ -162,49 +163,6 @@ export default class ImageGallery extends Component {
                     </Fade> 
                     <ModalImage />       
                 </div>
-                } />
-        
-                <Route path = {`${match.path}/images_shamans`} render={() =>  
-                  <div className="images-container shamans-container">
-                    <h2>Shamans project</h2>
-                    <Fade>
-                    <div className="gallery">
-                        <div className ="gallery-column">
-                        {photos.map(picture => picture.position === "shamans column 1" && <Photo
-                            src = {picture.src}
-                            title = {picture.title}
-                            key = {picture.index}
-                            imgId = {picture.index}
-                        />)}
-                        </div>
-                        <div className ="gallery-column">
-                        {photos.map(picture => picture.position === "shamans column 2" && <Photo
-                            src = {picture.src}
-                            title = {picture.title}
-                            key = {picture.index}
-                            imgId = {picture.index}
-                        />)}
-                        </div>
-                        <div className ="gallery-column">
-                        {photos.map(picture => picture.position === "shamans column 3" && <Photo
-                            src = {picture.src}
-                            title = {picture.title}
-                            key = {picture.index}
-                            imgId = {picture.index}
-                        />)}
-                        </div>
-                    </div>
-                    <div className="gallery-mobile">
-                      {photos.map(picture => picture.category === "shamans" && <Photo
-                          src = {picture.src}
-                          title = {picture.title}
-                          key = {picture.index}
-                          imgId = {picture.index}
-                        />)}
-                    </div>
-                    </Fade>  
-                    <ModalImage />      
-                  </div>
                 } />
                 
               </div>  
