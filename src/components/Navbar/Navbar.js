@@ -16,7 +16,9 @@ export default class Navbar extends Component {
                   <div className="sign-logo">
                     <Link to="/"><img src={sign} alt="sign" /></Link>
                   </div>
-                  <i className="fas fa-bars" onClick={() => handleNavMenu()}></i>
+                </div>
+                <div className={"hamb " + (navMenu && "hamb-active")} onClick={() => handleNavMenu()}>
+                  <div className="bar"/>
                 </div>
                 <div className="lang-menu">
                   <button className={"btn lang-btn " + (eng && "lang-active")} onClick={toggleENG} >EN</button>

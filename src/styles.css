@@ -104,11 +104,69 @@ a {
   .lang-menu .lang-btn {
     font-size: .9rem;
     padding: .5rem;
-    font-family: "Raleway", sans-serif; }
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(37, 36, 37, 0.5); }
   .lang-menu .lang-active {
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: #252425; }
+    color: #252425;
+    background-color: rgba(255, 255, 255, 0.7); }
+
+.hamb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: .5rem;
+  right: 1rem;
+  z-index: 5;
+  mix-blend-mode: exclusion;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  padding: .7rem; }
+  .hamb .bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 4; }
+  .hamb .bar::before, .hamb .bar::after {
+    content: '';
+    position: absolute;
+    z-index: 4;
+    top: -8px;
+    width: 100%;
+    height: 3px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .hamb .bar::after {
+    top: 8px; }
+
+.hamb:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%; }
+
+.hamb-active {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  .hamb-active .bar::before, .hamb-active .bar::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 .hamburger {
   display: -webkit-box;
@@ -132,13 +190,6 @@ a {
   top: 0;
   right: 2rem;
   z-index: 5; }
-  .hamburger .fa-bars {
-    cursor: pointer;
-    border-radius: .4rem;
-    text-align: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 2rem; }
   .hamburger .sign-logo {
     width: 10rem;
     margin-left: 3rem;
@@ -680,10 +731,10 @@ a {
         -ms-flex-align: start;
         align-items: flex-start; }
         .gallery-main-container .gallery-inner-container .images-container .gallery .gallery-column {
-          -webkit-box-flex: 33.3%;
-          -ms-flex: 33.3%;
-          flex: 33.3%;
-          max-width: 33.3%; }
+          -webkit-box-flex: 31%;
+          -ms-flex: 31%;
+          flex: 31%;
+          max-width: 31%; }
         .gallery-main-container .gallery-inner-container .images-container .gallery .img-container {
           overflow: hidden;
           border: 2px solid rgba(255, 255, 255, 0);
@@ -1103,8 +1154,10 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(37, 36, 37, 0.8); }
+  .modal-container .overlay {
+    width: 30%;
+    height: 100%; }
   .modal-container .modal-image-container {
-    height: 97%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

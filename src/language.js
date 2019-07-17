@@ -4,6 +4,7 @@ export const english = {
     backToProjectsBtn: "Back to projects",
     contactBtn: "Contact Me",
     aboutMeBtn: "About me",
+    closeBtn: "Close",
     // ------------------------ NAVBAR
     navTitle1: "Gallery",
         navTitle1Opt1: "Computer Art",
@@ -73,6 +74,7 @@ export const chinese = {
     backToProjectsBtn: "CN Back tp projects",
     contactBtn: "CN Contact Me",
     aboutMeBtn: "CN About me",
+    closeBtn: "CN Close",
     // ------------------------ NAVBAR
     navTitle1: "CN Gallery",
         navTitle1Opt1: "CN Computer Art",
