@@ -33,7 +33,7 @@ export default class MainPage extends Component {
                         <h2>{cn ? chinese.section1Title : english.section1Title }</h2>
                         <p>{cn ? chinese.section1SubTitle : english.section1SubTitle }</p>
                       </div>         
-                      <div className="genres-section">
+                      <div className="genres-section" >
                         <a href="#compart_section">
                           <p>{cn ? chinese.section1Menu1 : english.section1Menu1 }</p>
                         </a>

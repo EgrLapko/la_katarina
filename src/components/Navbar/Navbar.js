@@ -22,7 +22,7 @@ export default class Navbar extends Component {
                 </div>
                 <div className="lang-menu">
                   <button className={"btn lang-btn " + (eng && "lang-active")} onClick={toggleENG} >EN</button>
-                  <button className={"btn lang-btn " + (cn && "lang-active")} onClick={toggleCN} >中文</button>
+                  <button className={"btn lang-btn " + (cn && "lang-active")} onClick={toggleCN} style={{fontFamily: "'ZCOOL XiaoWei', serif"}} >中文</button>
                 </div>
                 <nav className={"navbar " + (navMenu && "navbar-active")}>
                   <div className="nav-menus">

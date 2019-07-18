@@ -1,6 +1,8 @@
 $mainDark: rgba(37, 36, 37, 1);
 $mainFont: 'Raleway', sans-serif;
 $secondaryFont: 'Montserrat', sans-serif;
+$chineseFont: 'Source-Han-Ligh1aa8e7dc5620303';
+$chineseHand: 'cyjianxk1aa8ec8c6820303';
 
 @mixin flexbox {
     display: flex;
@@ -12,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(37, 36, 37, 1);
+    font-weight: 200;
 }
 
 a {
@@ -23,7 +26,6 @@ a {
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: 200;
-    font-family: $secondaryFont;
     color: rgba(37, 36, 37, .9);
     margin: 0;
     margin-top: 4rem;
@@ -33,11 +35,11 @@ a {
 .btn {
     border: 0;
     font-size: 1.1rem;
-    font-family: $secondaryFont;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(37, 36, 37, .0);
     border: 1px solid rgba(255, 255, 255, 0);
+    font-family: $secondaryFont;
     padding: .7rem;
     cursor: pointer;
     transition: .3s;
@@ -89,6 +91,10 @@ a {
     100% {
         opacity: 1;
     }
+}
+
+.cn-text {
+    font-family: $chineseHand;
 }
 
 
@@ -203,7 +209,6 @@ a {
             @include flexbox;
             flex-direction: column;
             .menu-category {
-                font-family: $secondaryFont;
                 font-size: 3.5rem;
                 color: rgba(255, 255, 255, 1);
                 font-weight: 200;
@@ -214,7 +219,6 @@ a {
             }
             .menu-option {
                 margin: 0;
-                font-family: $secondaryFont;
                 font-size: 1.3rem;
                 text-transform: uppercase;
                 color: rgba(255, 255, 255, .7);
@@ -262,7 +266,6 @@ a {
                 text-align: center;
                 font-size: 4rem;
                 font-weight: 200;
-                font-family: $secondaryFont;
                 color: rgba(255, 255, 255, .9);
                 padding: 0;
                 margin: 0;
@@ -282,7 +285,6 @@ a {
             text-align: center;
             font-size: 1.2rem;
             font-weight: 200;
-            font-family: $secondaryFont;
             color: rgba(255, 255, 255, .8);
             border: 1px solid rgba(255, 255, 255, 0);
             padding: 10px;
@@ -306,7 +308,6 @@ a {
             font-size: 3.5rem;  
             font-weight: 200;
             text-align: center;
-            font-family: $secondaryFont;  
             color: rgba(255, 255, 255, 1);
             margin: 1rem;
             cursor: default;
@@ -314,7 +315,6 @@ a {
         .btn {
             border: 0;
             font-size: 1.1rem;
-            font-family: $secondaryFont;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 1);
             background-color: rgba(37, 36, 37, .0);
@@ -385,7 +385,6 @@ a {
     font-size: 1rem;
     color: rgba(255, 255, 255, 1);
     opacity: .6;
-    font-family: $secondaryFont;
     text-transform: uppercase;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
 }
@@ -422,10 +421,10 @@ a {
             }
             .about-name {
                 text-transform: uppercase;
+                font-family: $secondaryFont;
                 font-size: 4rem;
                 line-height: 4rem;
                 font-weight: 200;
-                font-family: $secondaryFont;
                 color: rgba(37, 36, 37, .9);
                 margin: 0;
                 margin-top: 2rem;
@@ -448,7 +447,6 @@ a {
                 padding: 1rem; 
                 .bio-text {
                     color: rgba(37, 36, 37, 1);
-                    font-family: $secondaryFont;
                     font-size: 1.2rem;
                     .abzac {
                         margin-left: 2rem;
@@ -480,7 +478,6 @@ a {
                 text-transform: uppercase;
                 font-size: 3.5rem;
                 font-weight: 200;
-                font-family: $secondaryFont;
                 color: rgba(37, 36, 37, .9);
                 margin: 0;
                 margin-top: 4rem;
@@ -490,7 +487,6 @@ a {
                 @include flexbox;
                 width: 100%;
                 p {
-                   font-family: $secondaryFont;
                    font-size: 1.4rem;
                    margin-left: 1rem;
                    margin-right: 1rem;
@@ -562,7 +558,6 @@ a {
                 padding: 2rem;
                 font-weight: 300;
                 text-transform: uppercase;
-                font-family: $secondaryFont;
                 margin: 0;
                 cursor: default;  
             }
@@ -700,18 +695,17 @@ a {
         @include flexbox;
         flex-direction: column;
         h2 {
-            font-family: $secondaryFont;
             color: rgba(255, 255, 255, .9);
             font-size: 1.3rem;
             font-weight: 200;
             text-transform: uppercase;
         }
         .website {
-            font-family: $secondaryFont;
             color: rgba(255, 255, 255, .9);
             font-size: 1.1rem;
             font-weight: 200;
             margin: 0;
+            font-family: $secondaryFont;
         }
         .socials {
             @include flexbox;
@@ -732,7 +726,6 @@ a {
         
     }
     .copyright {
-        font-family: $secondaryFont;
         color: rgba(255, 255, 255, .9);
         font-size: .8rem;
         font-weight: 200;
@@ -750,7 +743,6 @@ a {
     flex-direction: column;
     background-color: rgba(255, 255, 255, 1);
     .projects-title, .project-title {
-        font-family: $secondaryFont;
         font-size: 3rem;
         text-transform: uppercase;
         font-weight: 200;
@@ -802,6 +794,7 @@ a {
     background-color: rgba(255, 255, 255, 1);
     transition: all .7s ease;
     .single-project {
+        width: 100%;
         @include flexbox;
         animation: fade-out 1s;
         flex-direction: column;
@@ -813,7 +806,6 @@ a {
         }
         .single-title {
             font-size: 4rem;
-            font-family: $secondaryFont;
             text-transform: uppercase;
             font-weight: 200;
             margin: 0;
@@ -826,7 +818,6 @@ a {
             width: 70%;
             padding: 1rem;
             .desc-text {
-                font-family: $secondaryFont;
                 font-size: 1.2rem;
                 span {
                     margin-left: 3rem;
@@ -944,10 +935,10 @@ a {
         }
         .contact-cont, .contact-socials {
             @include flexbox;
+            font-family: $secondaryFont;
             flex-direction: column;
             margin-top: 2rem;
             .cont-text {
-                font-family: $secondaryFont;
                 font-size: 1.4rem;
                 margin: 0;
                 .bold-text {

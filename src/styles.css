@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #252425; }
+  background-color: #252425;
+  font-weight: 200; }
 
 a {
   text-decoration: none;
@@ -11,7 +12,6 @@ a {
   text-transform: uppercase;
   font-size: 3.5rem;
   font-weight: 200;
-  font-family: "Montserrat", sans-serif;
   color: rgba(37, 36, 37, 0.9);
   margin: 0;
   margin-top: 4rem;
@@ -20,11 +20,11 @@ a {
 .btn {
   border: 0;
   font-size: 1.1rem;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: white;
   background-color: rgba(37, 36, 37, 0);
   border: 1px solid rgba(255, 255, 255, 0);
+  font-family: "Montserrat", sans-serif;
   padding: .7rem;
   cursor: pointer;
   -webkit-transition: .3s;
@@ -84,6 +84,9 @@ a {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.cn-text {
+  font-family: "cyjianxk1aa8ec8c6820303"; }
 
 .lang-menu {
   display: -webkit-box;
@@ -255,7 +258,6 @@ a {
       -ms-flex-direction: column;
       flex-direction: column; }
       .navbar .nav-menus .menu-item .menu-category {
-        font-family: "Montserrat", sans-serif;
         font-size: 3.5rem;
         color: white;
         font-weight: 200;
@@ -265,7 +267,6 @@ a {
         cursor: default; }
       .navbar .nav-menus .menu-item .menu-option {
         margin: 0;
-        font-family: "Montserrat", sans-serif;
         font-size: 1.3rem;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.7);
@@ -327,7 +328,6 @@ a {
         text-align: center;
         font-size: 4rem;
         font-weight: 200;
-        font-family: "Montserrat", sans-serif;
         color: rgba(255, 255, 255, 0.9);
         padding: 0;
         margin: 0;
@@ -352,7 +352,6 @@ a {
       text-align: center;
       font-size: 1.2rem;
       font-weight: 200;
-      font-family: "Montserrat", sans-serif;
       color: rgba(255, 255, 255, 0.8);
       border: 1px solid rgba(255, 255, 255, 0);
       padding: 10px;
@@ -386,14 +385,12 @@ a {
       font-size: 3.5rem;
       font-weight: 200;
       text-align: center;
-      font-family: "Montserrat", sans-serif;
       color: white;
       margin: 1rem;
       cursor: default; }
     .parallax-background .parallax-secondary-section .btn {
       border: 0;
       font-size: 1.1rem;
-      font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       color: white;
       background-color: rgba(37, 36, 37, 0);
@@ -452,7 +449,6 @@ a {
   font-size: 1rem;
   color: white;
   opacity: .6;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
@@ -527,10 +523,10 @@ a {
           border-radius: 50%; }
       .about-page-wrapper .about-page .info-box .about-name {
         text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
         font-size: 4rem;
         line-height: 4rem;
         font-weight: 200;
-        font-family: "Montserrat", sans-serif;
         color: rgba(37, 36, 37, 0.9);
         margin: 0;
         margin-top: 2rem;
@@ -562,7 +558,6 @@ a {
         padding: 1rem; }
         .about-page-wrapper .about-page .info-box .info-section .bio-text {
           color: #252425;
-          font-family: "Montserrat", sans-serif;
           font-size: 1.2rem; }
           .about-page-wrapper .about-page .info-box .info-section .bio-text .abzac {
             margin-left: 2rem; }
@@ -615,7 +610,6 @@ a {
         text-transform: uppercase;
         font-size: 3.5rem;
         font-weight: 200;
-        font-family: "Montserrat", sans-serif;
         color: rgba(37, 36, 37, 0.9);
         margin: 0;
         margin-top: 4rem;
@@ -632,7 +626,6 @@ a {
         align-items: center;
         width: 100%; }
         .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-categories p {
-          font-family: "Montserrat", sans-serif;
           font-size: 1.4rem;
           margin-left: 1rem;
           margin-right: 1rem;
@@ -714,7 +707,6 @@ a {
         padding: 2rem;
         font-weight: 300;
         text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
         margin: 0;
         cursor: default; }
       .gallery-main-container .gallery-inner-container .images-container .gallery {
@@ -876,17 +868,16 @@ a {
     -ms-flex-direction: column;
     flex-direction: column; }
     .footer .footer-block h2 {
-      font-family: "Montserrat", sans-serif;
       color: rgba(255, 255, 255, 0.9);
       font-size: 1.3rem;
       font-weight: 200;
       text-transform: uppercase; }
     .footer .footer-block .website {
-      font-family: "Montserrat", sans-serif;
       color: rgba(255, 255, 255, 0.9);
       font-size: 1.1rem;
       font-weight: 200;
-      margin: 0; }
+      margin: 0;
+      font-family: "Montserrat", sans-serif; }
     .footer .footer-block .socials {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -914,7 +905,6 @@ a {
         -ms-transform: scale(1.2);
         transform: scale(1.2); }
   .footer .copyright {
-    font-family: "Montserrat", sans-serif;
     color: rgba(255, 255, 255, 0.9);
     font-size: .8rem;
     font-weight: 200;
@@ -939,7 +929,6 @@ a {
   flex-direction: column;
   background-color: white; }
   .projects-page .projects-title, .projects-page .project-title {
-    font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 200;
@@ -1023,6 +1012,7 @@ a {
   -o-transition: all .7s ease;
   transition: all .7s ease; }
   .single-project-page .single-project {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1045,7 +1035,6 @@ a {
       z-index: 5; }
     .single-project-page .single-project .single-title {
       font-size: 4rem;
-      font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       font-weight: 200;
       margin: 0;
@@ -1065,7 +1054,6 @@ a {
       width: 70%;
       padding: 1rem; }
       .single-project-page .single-project .single-description .desc-text {
-        font-family: "Montserrat", sans-serif;
         font-size: 1.2rem; }
         .single-project-page .single-project .single-description .desc-text span {
           margin-left: 3rem; }
@@ -1240,13 +1228,13 @@ a {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      font-family: "Montserrat", sans-serif;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
       margin-top: 2rem; }
       .contact-page-wrapper .contact-page .contact-cont .cont-text, .contact-page-wrapper .contact-page .contact-socials .cont-text {
-        font-family: "Montserrat", sans-serif;
         font-size: 1.4rem;
         margin: 0; }
         .contact-page-wrapper .contact-page .contact-cont .cont-text .bold-text, .contact-page-wrapper .contact-page .contact-socials .cont-text .bold-text {

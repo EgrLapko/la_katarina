@@ -20,7 +20,7 @@ export default class Contact extends Component {
                                 <div className="contact-cont">
                                     <p className="cont-text"><span className="uppercase">Katarina Blazhievskaya</span></p>
                                     {cn &&
-                                        <p className="cont-text">Chinese Name</p>
+                                        <p className="cont-text">卡塔琳娜</p>
                                     }
                                     <p className="cont-text">| La Katarina Photography |</p>
                                     <p className="cont-text">{cn ? chinese.contactLocation : english.contactLocation}</p>
@@ -28,7 +28,7 @@ export default class Contact extends Component {
                                     <p className="cont-text"><span className="bold-text">blazhievskaya.art@gmail.com</span></p>
                                 </div>
                                 <div className="contact-cont">
-                                    <p className="cont-text">{cn ? chinese.contactPageSocials : english.contactPageSocials}</p>
+                                    <p className="cont-text">{cn ? chinese.contactPageSocials : english.contactPageSocials}: </p>
                                     <div className="contact-socials">
                                         <i className="fab fa-facebook"></i>
                                         <i className="fab fa-weixin"></i>

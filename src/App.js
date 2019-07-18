@@ -15,7 +15,7 @@ class App extends Component {
       {value => {
         const { cn } = value;
         return (
-          <section>
+          <section  style={ cn ? {fontFamily: "'Source-Han-Ligh1aa8e7dc5620303'"} : {fontFamily: "'Montserrat', sans-serif"} }>
             <Navbar/>
             <Main/>
             <ScrollTop
@@ -24,7 +24,8 @@ class App extends Component {
               style={{ 
                   backgroundColor: "rgba(37, 36, 37, .8)",
                   border: "none",
-                  borderRadius: "0px"
+                  borderRadius: "0px",
+                  fontFamily: "'Montserrat', sans-serif"
                 }}
             />
             <Footer/>

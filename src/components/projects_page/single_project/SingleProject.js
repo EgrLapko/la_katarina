@@ -68,7 +68,7 @@ export default class SingleProject extends Component {
                                         <div className="single-project ukr-back">
                                             <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>{cn ? chinese.backToProjectsBtn : english.backToProjectsBtn}</button></Link>
                                             <ProjectTitle title = {cn ? chinese.singleProjectTitle2 : english.singleProjectTitle2}  />
-                                            <SingleDescription desc = {cn ? chinese.singleProjectDesc2 : english.singleProjectDesc12} />
+                                            <SingleDescription desc = {cn ? chinese.singleProjectDesc2 : english.singleProjectDesc2} />
                                             <div className="projects-gallery ukr-gallery">
                                                 <div className="project-column ukr-image">
                                                     {projects_images.map(image => image.position === "ukrainian column 1" && 
@@ -108,7 +108,7 @@ export default class SingleProject extends Component {
                                         <div className="single-project steampunk-back">
                                             <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>{cn ? chinese.backToProjectsBtn : english.backToProjectsBtn}</button></Link>
                                             <ProjectTitle title = {cn ? chinese.singleProjectTitle3 : english.singleProjectTitle3} />
-                                            <SingleDescription desc = {cn ? chinese.singleProjectDesc3 : english.singleProjectDesc13} />
+                                            <SingleDescription desc = {cn ? chinese.singleProjectDesc3 : english.singleProjectDesc3} />
                                             <div className="projects-gallery ukr-gallery">
                                                 <div className="project-column ukr-image">
                                                     {projects_images.map(image => image.position === "steampunk column 1" && 
