@@ -4,6 +4,9 @@ import { ContextConsumer } from '../../context/context';
 import { english, chinese } from '../../language';
 
 export default class Contact extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+      }
     render() {
         return (
             <ContextConsumer>

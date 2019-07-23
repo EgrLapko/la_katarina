@@ -108,9 +108,15 @@ a {
     font-size: .9rem;
     padding: .5rem;
     font-family: "Raleway", sans-serif;
-    background-color: rgba(37, 36, 37, 0.5); }
+    background-color: rgba(37, 36, 37, 0.5);
+    width: 3rem;
+    height: 2.6rem; }
+  .lang-menu .cn-btn {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: .9rem; }
   .lang-menu .lang-active {
     color: #252425;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.7); }
 
 .hamb {
