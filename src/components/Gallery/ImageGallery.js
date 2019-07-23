@@ -44,6 +44,7 @@ export default class ImageGallery extends Component {
                       <div className ="gallery-column">
                         {photos.map(picture => picture.position === "compart column 1" && <Photo
                           src = {picture.src}
+                          srcBig = {picture.srcBig}
                           title = {picture.title}
                           key = {picture.index}
                           imgId = {picture.index}
@@ -52,6 +53,7 @@ export default class ImageGallery extends Component {
                       <div className ="gallery-column">
                         {photos.map(picture => picture.position === "compart column 2" && <Photo
                           src = {picture.src}
+                          srcBig = {picture.srcBig}
                           title = {picture.title}
                           key = {picture.index}
                           imgId = {picture.index}
@@ -60,6 +62,7 @@ export default class ImageGallery extends Component {
                       <div className ="gallery-column">
                         {photos.map(picture => picture.position === "compart column 3" && <Photo
                           src = {picture.src}
+                          srcBig = {picture.srcBig}
                           title = {picture.title}
                             key = {picture.index}
                             imgId = {picture.index}
@@ -69,6 +72,7 @@ export default class ImageGallery extends Component {
                     <div className="gallery-mobile">
                       {photos.map(picture => picture.category === "compart" && <Photo
                           src = {picture.src}
+                          srcBig = {picture.srcBig}
                           title = {picture.title}
                           key = {picture.index}
                           imgId = {picture.index}
@@ -87,6 +91,7 @@ export default class ImageGallery extends Component {
                         <div className ="gallery-column">
                         {photos.map(picture => picture.position === "bw column 1" && <Photo
                             src = {picture.src}
+                            srcBig = {picture.srcBig}
                             title = {picture.title}
                             key = {picture.index}
                             imgId = {picture.index}
@@ -95,6 +100,7 @@ export default class ImageGallery extends Component {
                         <div className ="gallery-column">
                         {photos.map(picture => picture.position === "bw column 2" && <Photo
                             src = {picture.src}
+                            srcBig = {picture.srcBig}
                             title = {picture.title}
                             key = {picture.index}
                             imgId = {picture.index}
@@ -103,6 +109,7 @@ export default class ImageGallery extends Component {
                         <div className ="gallery-column">
                         {photos.map(picture => picture.position === "bw column 3" && <Photo
                             src = {picture.src}
+                            srcBig = {picture.srcBig}
                             title = {picture.title}
                             key = {picture.index}
                             imgId = {picture.index}
@@ -112,6 +119,7 @@ export default class ImageGallery extends Component {
                     <div className="gallery-mobile">
                       {photos.map(picture => picture.category === "bw" && <Photo
                           src = {picture.src}
+                          srcBig = {picture.srcBig}
                           title = {picture.title}
                           key = {picture.index}
                           imgId = {picture.index}
@@ -130,6 +138,7 @@ export default class ImageGallery extends Component {
                         <div className ="gallery-column">
                         {photos.map(picture => picture.position === "portraits column 1" && <Photo
                             src = {picture.src}
+                            srcBig = {picture.srcBig}
                             title = {picture.title}
                             key = {picture.index}
                             imgId = {picture.index}
@@ -138,6 +147,7 @@ export default class ImageGallery extends Component {
                         <div className ="gallery-column">
                         {photos.map(picture => picture.position === "portraits column 2" && <Photo
                             src = {picture.src}
+                            srcBig = {picture.srcBig}
                             title = {picture.title}
                             key = {picture.index}
                             imgId = {picture.index}
@@ -146,6 +156,7 @@ export default class ImageGallery extends Component {
                         <div className ="gallery-column">
                         {photos.map(picture => picture.position === "portraits column 3" && <Photo
                             src = {picture.src}
+                            srcBig = {picture.srcBig}
                             title = {picture.title}
                             key = {picture.index}
                             imgId = {picture.index}
@@ -155,6 +166,7 @@ export default class ImageGallery extends Component {
                     <div className="gallery-mobile">
                       {photos.map(picture => picture.category === "portraits" && <Photo
                           src = {picture.src}
+                          srcBig = {picture.srcBig}
                           title = {picture.title}
                           key = {picture.index}
                           imgId = {picture.index}

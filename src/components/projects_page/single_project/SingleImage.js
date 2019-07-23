@@ -3,14 +3,14 @@ import { ContextConsumer } from '../../../context/context';
 
 export default class SingleImage extends Component {
     render() {
-        const { src, imgID } = this.props;
+        const { src, imgID, srcBig } = this.props;
         return (
             <ContextConsumer>
                 {value => {
                     const { handleModal } = value;
                     return (
                         <div className="project-image-container">
-                            <img src={src} onClick={() => handleModal(imgID, src)} alt="project" />
+                            <img src={src} onClick={() => handleModal(imgID, srcBig)} alt="project" />
                         </div>
                     )
                 }}

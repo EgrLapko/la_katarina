@@ -4,7 +4,7 @@ import { ContextConsumer } from '../../context/context';
 export default class Photo extends Component {
   render() {
 
-    const {src, index, imgId} = this.props;
+    const {src, index, imgId, srcBig} = this.props;
 
     return (
       <ContextConsumer>
@@ -12,7 +12,7 @@ export default class Photo extends Component {
           const { handleModal } = value;
           return (
             <div className="img-container">
-              <img src = {src} alt="" key={index} onClick={() => handleModal(imgId, src)} />
+              <img src = {src} srcBig={srcBig} alt="" key={index} onClick={() => handleModal(imgId, srcBig)} />
             </div>
           )
         }}

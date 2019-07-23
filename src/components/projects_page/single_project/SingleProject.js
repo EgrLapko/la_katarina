@@ -34,6 +34,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -43,6 +44,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -52,6 +54,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -75,6 +78,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -84,6 +88,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -93,6 +98,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -115,6 +121,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -124,6 +131,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
@@ -133,6 +141,7 @@ export default class SingleProject extends Component {
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
+                                                            srcBig = {image.srcBig}
                                                             imgID = {image.id}
                                                         />
                                                     )}
