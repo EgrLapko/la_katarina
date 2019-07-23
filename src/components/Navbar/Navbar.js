@@ -28,21 +28,21 @@ export default class Navbar extends Component {
                   <div className="nav-menus">
                     <div className="menu-item">
                       <h2 className="menu-category"> {cn ? chinese.navTitle1 : english.navTitle1 } </h2>
-                      <Link to="/gallery/images_compart"><p className="menu-option" onClick={toggleBackCompart}>{cn ? chinese.navTitle1Opt1 : english.navTitle1Opt1 }</p></Link>
-                      <Link to="/gallery/images_bw"><p className="menu-option" onClick={toggleBackBw}>{cn ? chinese.navTitle1Opt2 : english.navTitle1Opt2 }</p></Link>
-                      <Link to="/gallery/images_portraits"><p className="menu-option" onClick={toggleBackPortraits}>{cn ? chinese.navTitle1Opt3 : english.navTitle1Opt3 }</p></Link>
+                      <Link to="/gallery/images_compart"><p className="menu-option" onClick={() => {toggleBackCompart(); handleNavMenu()}}>{cn ? chinese.navTitle1Opt1 : english.navTitle1Opt1 }</p></Link>
+                      <Link to="/gallery/images_bw"><p className="menu-option" onClick={() => {toggleBackBw(); handleNavMenu()}}>{cn ? chinese.navTitle1Opt2 : english.navTitle1Opt2 }</p></Link>
+                      <Link to="/gallery/images_portraits"><p className="menu-option" onClick={() => {toggleBackPortraits(); handleNavMenu()}}>{cn ? chinese.navTitle1Opt3 : english.navTitle1Opt3 }</p></Link>
                     </div>
                     <div className="menu-item">
                       <h2 className="menu-category">{cn ? chinese.navTitle2 : english.navTitle2 }</h2>
-                      <Link to="/projects/overview"><p className="menu-option projects-link">{cn ? chinese.navTitle2Opt1 : english.navTitle2Opt1 }</p></Link>
-                      <Link to="/projects/overview/shamans"><p className="menu-option">{cn ? chinese.navTitle2Opt2 : english.navTitle2Opt2 }</p></Link>
-                      <Link to="/projects/overview/ukrainian_beauty"><p className="menu-option">{cn ? chinese.navTitle2Opt3 : english.navTitle2Opt3 }</p></Link>
-                      <Link to="/projects/overview/steampunk"><p className="menu-option">{cn ? chinese.navTitle2Opt4 : english.navTitle2Opt4 }</p></Link>
+                      <Link to="/projects/overview"><p className="menu-option projects-link" onClick={handleNavMenu}>{cn ? chinese.navTitle2Opt1 : english.navTitle2Opt1 }</p></Link>
+                      <Link to="/projects/overview/shamans"><p className="menu-option" onClick={handleNavMenu}>{cn ? chinese.navTitle2Opt2 : english.navTitle2Opt2 }</p></Link>
+                      <Link to="/projects/overview/ukrainian_beauty"><p className="menu-option" onClick={handleNavMenu}>{cn ? chinese.navTitle2Opt3 : english.navTitle2Opt3 }</p></Link>
+                      <Link to="/projects/overview/steampunk"><p className="menu-option" onClick={handleNavMenu}>{cn ? chinese.navTitle2Opt4 : english.navTitle2Opt4 }</p></Link>
                     </div>
                     <div className="menu-item">
-                      <h2 className="menu-category">{cn ? chinese.navTitle3 : english.navTitle3}</h2>
-                      <Link to="/about"><p className="menu-option">{cn ? chinese.navTitle3Opt1 : english.navTitle3Opt1 }</p></Link>
-                      <Link to="/contact"><p className="menu-option">{cn ? chinese.navTitle3Opt2 : english.navTitle3Opt2 }</p></Link>
+                      <h2 className="menu-category" onClick={handleNavMenu}>{cn ? chinese.navTitle3 : english.navTitle3}</h2>
+                      <Link to="/about"><p className="menu-option" onClick={handleNavMenu}>{cn ? chinese.navTitle3Opt1 : english.navTitle3Opt1 }</p></Link>
+                      <Link to="/contact"><p className="menu-option" onClick={handleNavMenu}>{cn ? chinese.navTitle3Opt2 : english.navTitle3Opt2 }</p></Link>
                     </div>
                   </div>
                 </nav>
