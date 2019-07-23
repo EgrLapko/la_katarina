@@ -111,9 +111,14 @@ a {
         font-size: .9rem;
         padding: .5rem;
         font-family: $mainFont;
-        background-color: rgba(37, 36, 37, .5);
+        background-color: rgba(37, 36, 37, .7);
+        opacity: .5;
         width: 3rem;
         height: 2.6rem;
+        transition: .5s;
+        &:hover {
+            opacity: 1;
+        }
     }
     .cn-btn {
         font-family: 'Noto Sans SC', sans-serif;
@@ -123,6 +128,7 @@ a {
         color: rgba(37, 36, 37, 1);
         border: 1px solid rgba(255, 255, 255, .4);
         background-color: rgba(255, 255, 255, .7);
+        opacity: 1;
     }
 }
 
