@@ -89,7 +89,7 @@ export const chinese = {
         navTitle3Opt1: "个人简介",
         navTitle3Opt2: "联系方式",
     // ------------------------ MAIN PAGE
-    section1Title: "卡塔琳娜·布拉日叶夫斯卡亚",
+    section1Title: "卡塔琳娜",
     section1SubTitle: "摄影师",
     section1Menu1: "电脑艺术",
     section1Menu2: "黑白照片",

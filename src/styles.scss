@@ -215,10 +215,11 @@ a {
     .nav-menus {
         @include flexbox;
         align-items: flex-start;
-        justify-content: space-around;
-        width: 80%;
+        justify-content: center;
+        width: 100%;
         .menu-item {
             @include flexbox;
+            flex: 25%;
             flex-direction: column;
             .menu-category {
                 font-size: 3.5rem;
@@ -257,6 +258,84 @@ a {
     background-color: rgba(37, 36, 37, .9);
 }
 
+@media(max-width: 1020px) {
+    .lang-menu {
+        .lang-btn {
+            font-size: .6rem;
+            width: 2.5rem;
+        }
+    }
+    .navbar {
+        .nav-menus {
+            .menu-item {
+                .menu-category {
+                    font-size: 2.7rem;
+                    padding: 0.3rem;
+                    margin-top: 3rem
+                }
+                .menu-option {
+                    font-size: 1.1rem;
+                    padding: .1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 767px) {
+    .lang-menu {
+        .lang-btn {
+            font-size: .6rem;
+            width: 2.5rem;
+        }
+    }
+    .navbar {
+        .nav-menus {
+            flex-direction: column;
+            align-items: center;
+            .menu-item {
+                .menu-category {
+                    font-size: 2.5rem;
+                    padding: 0.3rem;
+                    margin-top: 3rem
+                }
+                .menu-option {
+                    font-size: 1.1rem;
+                    padding: .1rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 374px) {
+    .lang-menu {
+        .lang-btn {
+            font-size: .6rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+    .navbar {
+        .nav-menus {
+            flex-direction: column;
+            align-items: center;
+            .menu-item {
+                .menu-category {
+                    font-size: 1.7rem;
+                    padding: 0.3rem;
+                    margin-top: 1.3rem
+                }
+                .menu-option {
+                    font-size: .8rem;
+                    padding: .1rem;
+                }
+            }
+        }
+    }
+}
+
 // ------------------------- Parallax 
 
 .parallax-background {
@@ -290,8 +369,6 @@ a {
     } 
     .genres-section {
         @include flexbox;
-        justify-content: space-around;
-        width: 35%;
         margin-top: 3rem;
         p {
             text-align: center;
@@ -300,7 +377,7 @@ a {
             color: rgba(255, 255, 255, .8);
             border: 1px solid rgba(255, 255, 255, 0);
             padding: 10px;
-            margin: 0;
+            margin: 0 2rem;
             cursor: pointer;
             transition: .3s;
         }
@@ -367,12 +444,13 @@ a {
                     font-size: 2.2rem;
                 }
                 p {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
             }
         }
         .genres-section {
             flex-direction: column;
+            width: 100%;
             p {
                 font-size: 1rem;
             }
@@ -381,10 +459,11 @@ a {
             width: 100%;
             .parallax-title {
                 font-size: 3rem;
-                margin: 5rem;
+                text-transform: uppercase;
+                margin: 1rem;
             }
             .btn {
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -492,7 +571,7 @@ a {
                 font-weight: 200;
                 color: rgba(37, 36, 37, .9);
                 margin: 0;
-                margin-top: 4rem;
+                margin-top: 6rem;
                 cursor: default;
             }
             .gallery-categories {
@@ -571,6 +650,7 @@ a {
                 font-weight: 300;
                 text-transform: uppercase;
                 margin: 0;
+                margin-top: 2rem;
                 cursor: default;  
             }
             .gallery {
@@ -621,15 +701,15 @@ a {
     background-size: cover;
 }
 
-@media(max-width: 770px) {
+@media(max-width: 815px) {
     .gallery-main-container {
         .gallery-inner-container {
             .gallery-main-textbox {
                 height: 20vh;
                 .gallery-title {
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
                     padding: 0;
-                    margin-top: 2rem;
+                    margin-top: 6rem;
                 }
                 .gallery-categories {
                     p {
@@ -674,6 +754,9 @@ a {
             .images-container {
                 .gallery {
                     display: none;
+                }
+                h2 {
+                    margin-top: 1rem;
                 }
                 .gallery-mobile {
                     @include flexbox;
@@ -769,7 +852,6 @@ a {
         .project-item {
             @include flexbox;
             flex-direction: column;
-            width: 38rem;
             cursor: pointer;
             padding: 1rem;
             img {
@@ -786,6 +868,33 @@ a {
                 margin: 0;
                 padding: .5rem;
                 margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .projects-page {
+        .projects-title, .project-title {
+            font-size: 2rem;
+        }
+        .projects-title {
+            margin-top: 5rem;
+        }
+        .projects-container {
+            @include flexbox;
+            flex-direction: column;
+            .project-item {
+                width: 100%;
+                padding: 0;
+                margin-top: 1rem;
+                text-align: center;
+                padding-bottom: 2rem;
+                .project-title {
+                    font-size: 1.5rem;
+                    padding: 0;
+                    margin-top: 1rem;
+                }
             }
         }
     }
@@ -913,6 +1022,7 @@ a {
         position: absolute;
         top: 2rem;
         right: 2rem;
+        background-color: rgba(37, 36, 37, .7);
       }
     .move-btn {
         margin: 0 1rem;
@@ -923,6 +1033,22 @@ a {
       @include flexbox;
       animation: modal-open .7s;
   }
+
+  @media(max-width: 750px) {
+    .modal-container {
+        .overlay {
+            width: 0%;
+            height: 0%;
+        }
+        .modal-image-container {
+            height: 100%;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
 
 
 // ------------------------- Contact
