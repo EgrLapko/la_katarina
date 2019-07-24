@@ -629,6 +629,31 @@ a {
           .about-page-wrapper .about-page .info-box .info-section .bio-text .abzac {
             margin-left: 2rem; }
 
+@media (max-width: 815px) {
+  .about-page-wrapper .about-page .title {
+    margin-top: 5rem;
+    font-size: 3rem; }
+  .about-page-wrapper .about-page .info-box {
+    width: 100%; }
+    .about-page-wrapper .about-page .info-box .image-section {
+      width: 15rem;
+      padding: 0; }
+    .about-page-wrapper .about-page .info-box .about-name {
+      font-size: 1.5rem;
+      margin-top: 1rem; }
+    .about-page-wrapper .about-page .info-box .cn-name {
+      font-size: 1.5;
+      margin: 0; }
+    .about-page-wrapper .about-page .info-box .dark-btn {
+      margin-top: 1rem; }
+    .about-page-wrapper .about-page .info-box .info-section {
+      width: 90%;
+      padding: 0; }
+      .about-page-wrapper .about-page .info-box .info-section .bio-text {
+        font-size: 1rem; }
+        .about-page-wrapper .about-page .info-box .info-section .bio-text .abzac {
+          margin-left: 1rem; } }
+
 .gallery-main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1379,3 +1404,17 @@ a {
         margin: 1rem 1rem;
         cursor: pointer;
         color: rgba(37, 36, 37, 0.7); }
+
+@media (max-width: 815px) {
+  .contact-page-wrapper .contact-page .title {
+    margin-top: 5rem;
+    font-size: 3rem; }
+  .contact-page-wrapper .contact-page .image-section {
+    width: 15rem;
+    padding: 0; }
+  .contact-page-wrapper .contact-page .dark-btn {
+    margin-top: 1rem; }
+  .contact-page-wrapper .contact-page .contact-cont .cont-text, .contact-page-wrapper .contact-page .contact-socials .cont-text {
+    font-size: 1.2rem; }
+    .contact-page-wrapper .contact-page .contact-cont .cont-text span, .contact-page-wrapper .contact-page .contact-socials .cont-text span {
+      font-size: 1.3rem; } }

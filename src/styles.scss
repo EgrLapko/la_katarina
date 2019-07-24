@@ -548,6 +548,45 @@ a {
     }   
 }
 
+@media(max-width: 815px) {
+    .about-page-wrapper {
+        .about-page {
+            .title {
+                margin-top: 5rem;
+                font-size: 3rem;
+            }
+            .info-box {
+                width: 100%;
+                .image-section {
+                    width: 15rem;
+                    padding: 0;
+                }
+                .about-name {
+                    font-size: 1.5rem;
+                    margin-top: 1rem;
+                }
+                .cn-name {
+                    font-size: 1.5;
+                    margin: 0;
+                }
+                .dark-btn {
+                    margin-top: 1rem;
+                }
+                .info-section {
+                    width: 90%;
+                    padding: 0;
+                    .bio-text {
+                        font-size: 1rem;
+                        .abzac {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // ------------------------- Gallery
 
 .gallery-main-container {
@@ -1126,4 +1165,30 @@ a {
             }
         }
     }  
+}
+
+@media(max-width: 815px) {
+    .contact-page-wrapper {
+        .contact-page {
+            .title {
+                margin-top: 5rem;
+                font-size: 3rem;
+            }
+            .image-section {
+                width: 15rem;
+                padding: 0;
+            }
+            .dark-btn {
+                margin-top: 1rem;
+            }
+            .contact-cont, .contact-socials {
+                .cont-text {
+                    font-size: 1.2rem;
+                    span {
+                        font-size: 1.3rem;
+                    } 
+                }
+            }
+        }
+    }
 }
