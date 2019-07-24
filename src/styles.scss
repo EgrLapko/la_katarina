@@ -994,6 +994,32 @@ a {
     }
 }
 
+@media(max-width: 768px) {
+    .single-project-page {
+        .single-project {
+            .single-title {
+                font-size: 3rem;
+                text-align: center;
+            }
+            .single-description {
+                width: 90%;
+                .desc-text {
+                    font-size: 1.1rem;
+                }
+            }
+            .projects-gallery {
+                width: 100%;
+                .project-column {
+                    .project-image-container {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // ------------------------- Modal Window
 
 .modal-container {

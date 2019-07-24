@@ -1229,6 +1229,20 @@ a {
     background-attachment: fixed;
     background-size: cover; }
 
+@media (max-width: 768px) {
+  .single-project-page .single-project .single-title {
+    font-size: 3rem;
+    text-align: center; }
+  .single-project-page .single-project .single-description {
+    width: 90%; }
+    .single-project-page .single-project .single-description .desc-text {
+      font-size: 1.1rem; }
+  .single-project-page .single-project .projects-gallery {
+    width: 100%; }
+    .single-project-page .single-project .projects-gallery .project-column .project-image-container {
+      width: 100%;
+      margin: 0; } }
+
 .modal-container {
   display: none;
   -ms-flex-item-align: center;

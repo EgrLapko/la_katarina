@@ -12,7 +12,7 @@ export default class Photo extends Component {
           const { handleModal } = value;
           return (
             <div className="img-container">
-              <img src = {src} srcBig={srcBig} alt="" key={index} onClick={() => handleModal(imgId, srcBig)} />
+              <img src = {src} srcbig={srcBig} alt="" key={index} onClick={() => handleModal(imgId, srcBig)} />
             </div>
           )
         }}
