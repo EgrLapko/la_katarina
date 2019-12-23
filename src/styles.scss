@@ -1099,17 +1099,16 @@ a {
       animation: modal-open .7s;
   }
 
-  @media(max-width: 750px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
     .modal-container {
         .overlay {
-            width: 0%;
-            height: 0%;
+            display: none;
         }
         .modal-image-container {
-            height: 100%;
+            width: 100%;
             img {
                 width: 100%;
-                object-fit: cover;
+                height: auto;
             }
         }
     }

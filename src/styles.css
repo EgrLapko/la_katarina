@@ -1319,16 +1319,14 @@ a {
   -webkit-animation: modal-open .7s;
   animation: modal-open .7s; }
 
-@media (max-width: 750px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
   .modal-container .overlay {
-    width: 0%;
-    height: 0%; }
+    display: none; }
   .modal-container .modal-image-container {
-    height: 100%; }
+    width: 100%; }
     .modal-container .modal-image-container img {
       width: 100%;
-      -o-object-fit: cover;
-      object-fit: cover; } }
+      height: auto; } }
 
 .contact-page-wrapper {
   display: -webkit-box;
