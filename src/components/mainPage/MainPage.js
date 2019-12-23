@@ -22,7 +22,7 @@ export default class MainPage extends Component {
               <Fade>       
                 <Parallax
                     blur={0}
-                    bgImage={require('../../images/parallax/parallax1.jpg')}
+                    bgImage={'http://pic.yupoo.com/yehorlapko/168a18a2/c0f446c6.jpg'}
                     bgImageAlt="par1"
                     strength={200}
                     contentClassName="parallax-background first"
@@ -55,7 +55,7 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'compart_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={require('../../images/parallax/parallax2.jpg')}
+                      bgImage={'http://pic.yupoo.com/yehorlapko/18c04933/675531a7.jpg'}
                       bgImageAlt="par2"
                       strength={450}
                       contentClassName="parallax-background second"
@@ -72,7 +72,7 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'bw_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={require('../../images/parallax/parallax3.jpg')}
+                      bgImage={'http://pic.yupoo.com/yehorlapko/dc97fa72/ca86ed4b.jpg'}
                       bgImageAlt="par3"
                       strength={600}
                       contentClassName="parallax-background second"
@@ -89,7 +89,7 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'portraits_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={require('../../images/parallax/parallax4.jpg')}
+                      bgImage={'http://pic.yupoo.com/yehorlapko/f59e0e67/15b4bcd7.jpg'}
                       bgImageAlt="par4"
                       strength={800}
                       contentClassName="parallax-background second"
@@ -106,7 +106,7 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'projects_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={require('../../images/parallax/parallax5.jpg')}
+                      bgImage={'http://pic.yupoo.com/yehorlapko/dbae3c0e/2b930973.jpg'}
                       bgImageAlt="par5"
                       strength={400}
                       contentClassName="parallax-background second"
