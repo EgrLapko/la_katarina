@@ -1,5 +1,5 @@
 const photos = [
-    { src: '/images/image_gallery/compart/1angels.jpg',
+    { src: 'https://i.imgur.com/J7VD5a9.jpg',
       srcBig: '/images/image_gallery/compart/big/1angels.jpg',
       category: 'compart',
       index: 0,
@@ -90,7 +90,7 @@ const photos = [
       title: '',
       position: 'compart column 1'
     },
-    { src: '/images/image_gallery/compart/14future.jpg',
+    { src: 'https://i.imgur.com/lVcUPjU.jpg',
       srcBig: '/images/image_gallery/compart/big/14future.jpg',
       category: 'compart',
       index: 13, 
