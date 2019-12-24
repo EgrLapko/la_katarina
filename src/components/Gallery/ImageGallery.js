@@ -30,15 +30,22 @@ export default class ImageGallery extends Component {
                   <Fade>
                     <h2 className="gallery-title">{cn ? chinese.galleryTitle : english.galleryTitle}</h2>
                     <div className="gallery-categories">
-                      <NavLink to={`${match.url}/images_compart`} activeClassName="active-submenu" onClick={toggleBackCompart}><p>{cn ? chinese.galleryGenre1 : english.galleryGenre1}</p></NavLink>
-                      <NavLink to={`${match.url}/images_bw`} activeClassName="active-submenu" onClick={toggleBackBw}><p>{cn ? chinese.galleryGenre2 : english.galleryGenre2}</p></NavLink>
-                      <NavLink to={`${match.url}/images_portraits`} activeClassName="active-submenu" onClick={toggleBackPortraits}><p>{cn ? chinese.galleryGenre3 : english.galleryGenre3}</p></NavLink>                    </div>
+                      <NavLink to={`${match.url}/images_compart`} className="category-name" activeClassName="active-submenu" onClick={toggleBackCompart}>
+                        {cn ? chinese.galleryGenre1 : english.galleryGenre1}
+                      </NavLink>
+                      <NavLink to={`${match.url}/images_bw`} className="category-name" activeClassName="active-submenu" onClick={toggleBackBw}>
+                        {cn ? chinese.galleryGenre2 : english.galleryGenre2}
+                      </NavLink>
+                      <NavLink to={`${match.url}/images_portraits`} className="category-name" activeClassName="active-submenu" onClick={toggleBackPortraits}>
+                        {cn ? chinese.galleryGenre3 : english.galleryGenre3}
+                      </NavLink>                    
+                    </div>
                   </Fade>    
                 </div>
                 
                 <Route path = {`${match.path}/images_compart`} render={() =>  
                 <div className="images-container compart-container">
-                  <h2>{cn ? chinese.galleryGenre1 : english.galleryGenre1}</h2>
+                  <h2 className="genre-title">{cn ? chinese.galleryGenre1 : english.galleryGenre1}</h2>
                   <Fade>
                     <div className="gallery">
                       <div className ="gallery-column">
@@ -85,7 +92,7 @@ export default class ImageGallery extends Component {
         
               <Route path = {`${match.path}/images_bw`} render={() =>  
                 <div className="images-container bw-container">
-                    <h2>{cn ? chinese.galleryGenre2 : english.galleryGenre2}</h2>
+                    <h2 className="genre-title">{cn ? chinese.galleryGenre2 : english.galleryGenre2}</h2>
                     <Fade>
                     <div className="gallery">
                         <div className ="gallery-column">
@@ -132,7 +139,7 @@ export default class ImageGallery extends Component {
         
               <Route path = {`${match.path}/images_portraits`} render={() =>  
                 <div className="images-container portraits-container">
-                    <h2>{cn ? chinese.galleryGenre3 : english.galleryGenre3}</h2>
+                    <h2 className="genre-title">{cn ? chinese.galleryGenre3 : english.galleryGenre3}</h2>
                     <Fade>
                     <div className="gallery">
                         <div className ="gallery-column">

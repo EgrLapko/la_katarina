@@ -29,12 +29,11 @@ export default class Contact extends Component {
                                     <p className="cont-text">{cn ? chinese.contactLocation : english.contactLocation}</p>
                                     <p className="cont-text"><span className="bold-text">+8618401762408</span></p>
                                     <p className="cont-text"><span className="bold-text">blazhievskaya.art@gmail.com</span></p>
-                                </div>
-                                <div className="contact-cont">
-                                    <p className="cont-text">{cn ? chinese.contactPageSocials : english.contactPageSocials}: </p>
                                     <div className="contact-socials">
-                                        <i className="fab fa-facebook"></i>
-                                        <i className="fab fa-weixin"></i>
+                                        <i className="fab fa-facebook"><p>: Katarinaphoto</p></i>
+                                        {
+                                            cn && <i className="fab fa-weixin"><p>: Katarinaart</p></i>
+                                        }
                                     </div>
                                 </div>
                             </div>      

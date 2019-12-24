@@ -12,8 +12,7 @@ export default class Navbar extends Component {
           const { handleNavMenu, navMenu, toggleBackCompart, toggleBackBw, toggleBackPortraits, toggleENG, toggleCN, eng, cn } = value;
           return (
             <React.Fragment>
-
-                <div className="hamburger">
+                <div className="navbar">
                   <div className="sign-logo">
                     <Link to="/"><img src={sign} alt="sign" /></Link>
                   </div>
@@ -27,7 +26,7 @@ export default class Navbar extends Component {
                   <button className={"btn lang-btn cn-btn " + (cn && "lang-active")} onClick={toggleCN}>中文</button>
                 </div>
 
-                <nav className={"navbar " + (navMenu && "navbar-active")}>
+                <nav className={"main-menu " + (navMenu && "menu-active")}>
                   <div className="nav-menus">
                     <div className="menu-item">
                       <h2 className="menu-category"> {cn ? chinese.navTitle1 : english.navTitle1 } </h2>
@@ -50,7 +49,6 @@ export default class Navbar extends Component {
                   </div>
                 </nav>
             </React.Fragment>
-            
           )
         }}
       </ContextConsumer>

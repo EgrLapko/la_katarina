@@ -19,7 +19,7 @@ export const english = {
         navTitle3Opt1: "Bio",
         navTitle3Opt2: "Contacts",
     // ------------------------ MAIN PAGE
-    section1Title: "Katarina Blazhieskaya",
+    section1Title: "Katarina Blazhievskaya",
     section1SubTitle: "Photographer",
     section1Menu1: "Computer Art",
     section1Menu2: "B/W Images",

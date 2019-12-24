@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Link } from 'react';
 import { english, chinese } from '../../language';
 import { ContextConsumer } from '../../context/context';
 
@@ -13,8 +13,17 @@ export default function Footer() {
               <h2>{cn ? chinese.footerTitle1 : english.footerTitle1}</h2>
               <p className="website">blazhievskaya.art@gmail.com</p>
               <div className="socials">
-                  <p className="social-btn"><i className="fab fa-facebook-square"/></p>
-                  <p className="social-btn"><i className="fab fa-weixin"></i></p>
+                  <div className="social-container">
+                      <i className="fab fa-facebook-square"/>
+                      <p> : Katarinaphoto </p>
+                  </div>
+                  {
+                    cn &&
+                    <div className="social-container">
+                      <i className="fab fa-weixin"></i>
+                      <p> : Katarinaart </p>
+                    </div>
+                  }
               </div>
               <p className="copyright"> {cn ? chinese.footerCopyright : english.footerCopyright} </p>
             </div>

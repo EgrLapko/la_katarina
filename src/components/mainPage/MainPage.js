@@ -13,6 +13,13 @@ export default class MainPage extends Component {
   }
 
   render() {
+
+    const parallax1 = "http://pic.yupoo.com/yehorlapko/168a18a2/c0f446c6.jpg";
+    const parallax2 = "http://pic.yupoo.com/yehorlapko/1626b847/d2f4d309.jpg";
+    const parallax3 = "http://pic.yupoo.com/yehorlapko/0b3dcfb7/967a22ad.jpg";
+    const parallax4 = "http://pic.yupoo.com/yehorlapko/5c8365d2/10d512b8.jpg";
+    const parallax5 = "http://pic.yupoo.com/yehorlapko/6614de51/34aa5f9b.jpg";
+
     return (
       <ContextConsumer>
         {value => {
@@ -22,9 +29,9 @@ export default class MainPage extends Component {
               <Fade>       
                 <Parallax
                     blur={0}
-                    bgImage={'http://pic.yupoo.com/yehorlapko/168a18a2/c0f446c6.jpg'}
+                    bgImage={parallax1}
                     bgImageAlt="par1"
-                    strength={200}
+                    strength={100}
                     contentClassName="parallax-background first"
                 >   
                   <Fade>
@@ -55,9 +62,9 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'compart_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={'http://pic.yupoo.com/yehorlapko/18c04933/675531a7.jpg'}
+                      bgImage={parallax2}
                       bgImageAlt="par2"
-                      strength={450}
+                      strength={250}
                       contentClassName="parallax-background second"
                   >   
                     <Fade bottom>
@@ -72,9 +79,9 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'bw_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={'http://pic.yupoo.com/yehorlapko/dc97fa72/ca86ed4b.jpg'}
+                      bgImage={parallax3}
                       bgImageAlt="par3"
-                      strength={600}
+                      strength={250}
                       contentClassName="parallax-background second"
                   >   
                     <Fade bottom>
@@ -89,14 +96,14 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'portraits_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={'http://pic.yupoo.com/yehorlapko/f59e0e67/15b4bcd7.jpg'}
+                      bgImage={parallax4}
                       bgImageAlt="par4"
-                      strength={800}
+                      strength={100}
                       contentClassName="parallax-background second"
                   >   
                     <Fade bottom>
                       <div className="parallax-secondary-section">
-                        <h2 className="parallax-title">{cn ? chinese.section4Title : english.section4Title }</h2>
+                        <h2 className="parallax-title ">{cn ? chinese.section4Title : english.section4Title }</h2>
                         <Link to="/gallery/images_portraits"><button className="btn" onClick={toggleBackPortraits}>{cn ? chinese.section4SubTitle : english.section4SubTitle }</button></Link>
                       </div>  
                     </Fade>      
@@ -106,9 +113,9 @@ export default class MainPage extends Component {
               <ScrollableAnchor id={'projects_section'}>
                 <Parallax
                       blur={0}
-                      bgImage={'http://pic.yupoo.com/yehorlapko/dbae3c0e/2b930973.jpg'}
+                      bgImage={parallax5}
                       bgImageAlt="par5"
-                      strength={400}
+                      strength={250}
                       contentClassName="parallax-background second"
                   >   
                     <Fade bottom>
