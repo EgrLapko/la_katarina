@@ -13,7 +13,7 @@ export default class Info extends Component {
                         return (
                             <div className="info-page">
                                 <div className="image-section">   
-                                    <img className="contact-image" src="http://pic.yupoo.com/yehorlapko/e2c89cea/8f94b8a2.jpg" alt=""/>
+                                    <img className="contact-image" src="https://pic.yupoo.com/yehorlapko/e2c89cea/8f94b8a2.jpg" alt=""/>
                                 </div>
                                 <h2 className="about-name">| <span>Katarina</span>Blazhievskaya |</h2>
                                 { cn &&

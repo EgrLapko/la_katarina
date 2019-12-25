@@ -10,9 +10,9 @@ export default class Projects extends Component {
       }
     render() {
         const {match} = this.props;
-        const shamansImage = "http://pic.yupoo.com/yehorlapko/9c0a0ae3/30e0d4ad.jpg";
-        const ukraineImage = "http://pic.yupoo.com/yehorlapko/fcece064/abef8635.jpg";
-        const steampunkImage = "http://pic.yupoo.com/yehorlapko/a91054ba/57398423.jpg"
+        const shamansImage = "https://pic.yupoo.com/yehorlapko/9c0a0ae3/30e0d4ad.jpg";
+        const ukraineImage = "https://pic.yupoo.com/yehorlapko/fcece064/abef8635.jpg";
+        const steampunkImage = "https://pic.yupoo.com/yehorlapko/a91054ba/57398423.jpg"
 
         return (
             <ContextConsumer>

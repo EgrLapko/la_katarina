@@ -14,11 +14,11 @@ export default class MainPage extends Component {
 
   render() {
 
-    const parallax1 = "http://pic.yupoo.com/yehorlapko/168a18a2/c0f446c6.jpg";
-    const parallax2 = "http://pic.yupoo.com/yehorlapko/1626b847/d2f4d309.jpg";
-    const parallax3 = "http://pic.yupoo.com/yehorlapko/0b3dcfb7/967a22ad.jpg";
-    const parallax4 = "http://pic.yupoo.com/yehorlapko/5c8365d2/10d512b8.jpg";
-    const parallax5 = "http://pic.yupoo.com/yehorlapko/6614de51/34aa5f9b.jpg";
+    const parallax1 = "https://pic.yupoo.com/yehorlapko/168a18a2/c0f446c6.jpg";
+    const parallax2 = "https://pic.yupoo.com/yehorlapko/1626b847/d2f4d309.jpg";
+    const parallax3 = "https://pic.yupoo.com/yehorlapko/0b3dcfb7/967a22ad.jpg";
+    const parallax4 = "https://pic.yupoo.com/yehorlapko/5c8365d2/10d512b8.jpg";
+    const parallax5 = "https://pic.yupoo.com/yehorlapko/6614de51/34aa5f9b.jpg";
 
     return (
       <ContextConsumer>
