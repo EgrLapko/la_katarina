@@ -7,6 +7,7 @@ import ImageGallery from './components/Gallery/ImageGallery';
 import Projects from './components/projects_page/Projects';
 import SingleProject from './components/projects_page/single_project/SingleProject';
 import Contact from './components/Contact/Contact';
+import Info from './components/Info/Info';
 
 export default class Main extends Component {
   render() {
@@ -14,8 +15,8 @@ export default class Main extends Component {
           <Switch>
             <Route exact path = '/' component={MainPage} />
             <Route path = '/gallery' component={ImageGallery} />
-            <Route path = '/about' component = {About} />
-            <Route path = '/contact' component = {Contact} />
+            <Route path = '/about' component = {Info} />
+            <Route path = '/contact' component = {Info} />
             <Route path = '/projects/overview' exact component = {Projects} />
             <Route path = '/projects/:project' component = {SingleProject} />
           </Switch>

@@ -17,7 +17,7 @@ export default class Contact extends Component {
                             <div className="contact-page">
                                 <h2 className="title">{cn ? chinese.contactPageTitle : english.contactPageTitle}</h2>
                                 <div className="image-section">   
-                                    <img className="contact-image" src="../images/katarina.jpg" alt=""/>
+                                    <img className="contact-image" src="http://pic.yupoo.com/yehorlapko/e2c89cea/8f94b8a2.jpg" alt=""/>
                                 </div>
                                 <Link to="/about"><button className="btn dark-btn">{cn ? chinese.aboutPageTitle : english.aboutPageTitle}</button></Link>
                                 <div className="contact-cont">

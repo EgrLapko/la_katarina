@@ -29,8 +29,8 @@ export default class SingleProject extends Component {
                                             <ProjectTitle title = {cn ? chinese.singleProjectTitle1 : english.singleProjectTitle1} />
                                             <SingleDescription desc = {cn ? chinese.singleProjectDesc1 : english.singleProjectDesc1} />
                                             <div className="projects-gallery">
-                                                <div className="project-column">
-                                                    {projects_images.map(image => image.position === "shamans column 1" && 
+                                                <div className="images-container">
+                                                    {projects_images.map(image => image.project === "shamans" && 
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
@@ -38,27 +38,7 @@ export default class SingleProject extends Component {
                                                             imgID = {image.id}
                                                         />
                                                     )}
-                                                </div>
-                                                <div className="project-column">
-                                                    {projects_images.map(image => image.position === "shamans column 2" && 
-                                                        <SingleImage
-                                                            key = {image.id}
-                                                            src = {image.src}
-                                                            srcBig = {image.srcBig}
-                                                            imgID = {image.id}
-                                                        />
-                                                    )}
-                                                </div>
-                                                <div className="project-column">
-                                                    {projects_images.map(image => image.position === "shamans column 3" && 
-                                                        <SingleImage
-                                                            key = {image.id}
-                                                            src = {image.src}
-                                                            srcBig = {image.srcBig}
-                                                            imgID = {image.id}
-                                                        />
-                                                    )}
-                                                </div>      
+                                                </div>  
                                             </div>
                                         </div>
                                         <ModalImage />       
@@ -72,29 +52,9 @@ export default class SingleProject extends Component {
                                             <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>{cn ? chinese.backToProjectsBtn : english.backToProjectsBtn}</button></Link>
                                             <ProjectTitle title = {cn ? chinese.singleProjectTitle2 : english.singleProjectTitle2}  />
                                             <SingleDescription desc = {cn ? chinese.singleProjectDesc2 : english.singleProjectDesc2} />
-                                            <div className="projects-gallery ukr-gallery">
-                                                <div className="project-column ukr-image">
-                                                    {projects_images.map(image => image.position === "ukrainian column 1" && 
-                                                        <SingleImage
-                                                            key = {image.id}
-                                                            src = {image.src}
-                                                            srcBig = {image.srcBig}
-                                                            imgID = {image.id}
-                                                        />
-                                                    )}
-                                                </div>
-                                                <div className="project-column ukr-image">
-                                                    {projects_images.map(image => image.position === "ukrainian column 2" && 
-                                                        <SingleImage
-                                                            key = {image.id}
-                                                            src = {image.src}
-                                                            srcBig = {image.srcBig}
-                                                            imgID = {image.id}
-                                                        />
-                                                    )}
-                                                </div>
-                                                <div className="project-column ukr-image">
-                                                    {projects_images.map(image => image.position === "ukrainian column 3" && 
+                                            <div className="projects-gallery">
+                                                <div className="images-container">
+                                                    {projects_images.map(image => image.project === "ukrainian" && 
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}
@@ -115,29 +75,9 @@ export default class SingleProject extends Component {
                                             <Link to="/projects/overview"><button className="btn dark-btn"><i className="fas fa-chevron-left"></i>{cn ? chinese.backToProjectsBtn : english.backToProjectsBtn}</button></Link>
                                             <ProjectTitle title = {cn ? chinese.singleProjectTitle3 : english.singleProjectTitle3} />
                                             <SingleDescription desc = {cn ? chinese.singleProjectDesc3 : english.singleProjectDesc3} />
-                                            <div className="projects-gallery ukr-gallery">
-                                                <div className="project-column ukr-image">
-                                                    {projects_images.map(image => image.position === "steampunk column 1" && 
-                                                        <SingleImage
-                                                            key = {image.id}
-                                                            src = {image.src}
-                                                            srcBig = {image.srcBig}
-                                                            imgID = {image.id}
-                                                        />
-                                                    )}
-                                                </div>
-                                                <div className="project-column ukr-image">
-                                                    {projects_images.map(image => image.position === "steampunk column 2" && 
-                                                        <SingleImage
-                                                            key = {image.id}
-                                                            src = {image.src}
-                                                            srcBig = {image.srcBig}
-                                                            imgID = {image.id}
-                                                        />
-                                                    )}
-                                                </div>
-                                                <div className="project-column ukr-image">
-                                                    {projects_images.map(image => image.position === "steampunk column 3" && 
+                                            <div className="projects-gallery">
+                                                <div className="images-container">
+                                                    {projects_images.map(image => image.project === "steampunk" && 
                                                         <SingleImage
                                                             key = {image.id}
                                                             src = {image.src}

@@ -1,4 +1,4 @@
-import React, { Link } from 'react';
+import React from 'react';
 import { english, chinese } from '../../language';
 import { ContextConsumer } from '../../context/context';
 

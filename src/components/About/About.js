@@ -18,7 +18,7 @@ export default class About extends Component {
                 <h2 className="title">{cn ? chinese.aboutPageTitle : english.aboutPageTitle}</h2>
                 <div className="info-box">
                   <div className="image-section">   
-                    <img src="../images/katarina.jpg" alt=""/>
+                    <img src="http://pic.yupoo.com/yehorlapko/e2c89cea/8f94b8a2.jpg" alt=""/>
                   </div>
                   <h2 className="about-name">| <span>Katarina</span>Blazhievskaya |</h2>
                   { cn &&
