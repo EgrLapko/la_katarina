@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 export default class ProjectItem extends Component {
     render() {
 
-        const { image, title, link } = this.props;
+        const { image, title } = this.props;
 
         const backImage = {
             backgroundImage: `url(${image})`

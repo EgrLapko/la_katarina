@@ -39,7 +39,7 @@ export const english = {
     section5SubTitle: "Open",
     // ------------------------ FOOTER
     footerTitle1: "Get in touch",
-    footerCopyright: "©2019 Photographer Blazhievskaya Katarina (La Katarina). All rights Reserved. Made by Yehor Lapko.",
+    footerCopyright: "©2020 Photographer Blazhievskaya Katarina (La Katarina). All rights Reserved. Made by Yehor Lapko.",
     // ------------------------ IMAGE GALLERY
     galleryTitle: "Image Gallery",
     galleryGenre1: "Computer Art",
@@ -109,7 +109,7 @@ export const chinese = {
     section5SubTitle: "打开",
     // ------------------------ FOOTER
     footerTitle1: "联系方式",
-    footerCopyright: "2019年 摄影师卡塔琳娜·布拉日叶夫斯卡亚（La Katarina）。由烨豪（Yehor Lapko）制造。",
+    footerCopyright: "2020年 摄影师卡塔琳娜·布拉日叶夫斯卡亚（La Katarina）。由烨豪（Yehor Lapko）制造。",
     // ------------------------ IMAGE GALLERY
     galleryTitle: "相册",
     galleryGenre1: "电脑艺术",

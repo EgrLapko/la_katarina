@@ -135,7 +135,7 @@ a {
             padding: 0;
             opacity: .5;
             transition: .5s;
-            background-color: rgba(37, 36, 37, 0);
+            background-color: rgba(37, 36, 37, 1);
             height: 2.5rem;
             width: 2.5rem;
             &:hover {
@@ -268,13 +268,13 @@ a {
         .lang-menu {
             height: 4rem;
             .lang-btn {
-                font-size: .7rem;
+                font-size: .8rem;
                 font-family: $mainFont;
                 opacity: .5;
                 transition: .5s;
                 background-color: rgba(37, 36, 37, .5);
-                height: 2.5rem;
-                width: 2.5rem;
+                height: 2.3rem;
+                width: 2.3rem;
                 &:hover {
                     opacity: 1;
                     border: none;
@@ -360,9 +360,9 @@ a {
             transition: .3s;
         }
         p:hover {
-            background-color: rgba(37, 36, 37, 0); 
+            background-color: rgba(37, 36, 37, .5); 
             color: rgba(255, 255, 255, 1);
-            border: 1px solid rgba(255, 255, 255, .7);
+            // border: 1px solid rgba(255, 255, 255, .7);
         }
     }
     .parallax-secondary-section {
@@ -391,7 +391,8 @@ a {
             transition: .3s;
         }
         .btn:hover {
-            border: 1px solid rgba(255, 255, 255, .7);
+            // border: 1px solid rgba(255, 255, 255, .7);
+            background-color: rgba(37, 36, 37, .5);
         }
         .btn:focus {
             outline: none;
@@ -412,7 +413,7 @@ a {
     justify-content: flex-start;
 }
 
-@media(max-width: 770px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
     .parallax-background {
         height: 100vh;
         .parallax-textbox {
@@ -429,19 +430,24 @@ a {
         .genres-section {
             flex-direction: column;
             width: 100%;
+            margin-top: 1rem;
             p {
                 font-size: 1rem;
+                padding: .5rem;
             }
         }
         .parallax-secondary-section {
             width: 100%;
+            height: 100%;
+            background-color: rgba(37, 36, 37, .2);
+            margin: 0;
             .parallax-title {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 text-transform: uppercase;
-                margin: 1rem;
+                margin: .5rem;
             }
             .btn {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -658,12 +664,17 @@ a {
                     border: 1px solid rgba(255, 255, 255, 0);
                     margin: 1rem 1rem;
                     padding: .5rem;
+                    transition: .1s;
                     &:hover {
-                        color: rgba(37, 36, 37, 1);
+                        // color: rgba(37, 36, 37, 1);
+                        color: rgba(255, 255, 255, 1);
+                        background-color: rgba(37, 36, 37, .4);
                     }
                     } 
                     .active-submenu {
-                        border: 1px solid rgba(37, 36, 37, .2);
+                        // border: 1px solid rgba(37, 36, 37, .2);
+                        background-color: rgba(37, 36, 37, .4);
+                        color: rgba(255, 255, 255, 1);
                     }             
                 }
             }
@@ -776,15 +787,9 @@ a {
                 }
             }
         }
-    }
-    &.compart-back {
-        background-position: center;
-    }
-    &.portraits-back {
-        background-position: right;
-    }
-    &.bw-back {
-        background-position: left;
+        &.compart-back, &.portraits-back, &.bw-back {
+            background-image: none;
+        }
     }
 }
 
@@ -984,7 +989,6 @@ a {
         .single-description {
             @include flexbox;
             width: 100%;
-            padding: 1rem;
             .desc-text {
                 width: 50%;
                 font-size: 1.3rem;
@@ -1076,9 +1080,9 @@ a {
                 }
             }
         }
-    }
-    .shamans-back, .ukr-back, .steampunk-back {
-        background-position: center;
+        .shamans-back, .ukr-back, .steampunk-back {
+            background-image: none;
+        }
     }
 }
 

@@ -42,16 +42,16 @@ export default class MainPage extends Component {
                       </div>         
                       <div className="genres-section" >
                         <a href="#compart_section">
-                          <p>{cn ? chinese.section1Menu1 : english.section1Menu1 }</p>
+                          <p className="btn">{cn ? chinese.section1Menu1 : english.section1Menu1 }</p>
                         </a>
                         <a href="#bw_section">
-                          <p>{cn ? chinese.section1Menu2 : english.section1Menu2 }</p>
+                          <p className="btn">{cn ? chinese.section1Menu2 : english.section1Menu2 }</p>
                         </a>
                         <a href="#portraits_section">
-                          <p>{cn ? chinese.section1Menu3 : english.section1Menu3 }</p>
+                          <p className="btn">{cn ? chinese.section1Menu3 : english.section1Menu3 }</p>
                         </a>
                         <a href="#projects_section">
-                          <p>{cn ? chinese.section1Menu4 : english.section1Menu4 }</p>
+                          <p className="btn">{cn ? chinese.section1Menu4 : english.section1Menu4 }</p>
                         </a>
                       </div>   
                     </div>

@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { ContextConsumer } from '../../../context/context';
 import { english, chinese } from '../../../language';
 
+
 export default class ModalImage extends Component {
-
     render() {
-
         return (
             <ContextConsumer>
                 {value => {

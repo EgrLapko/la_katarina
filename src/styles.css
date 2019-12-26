@@ -155,7 +155,7 @@ a {
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
-      background-color: rgba(37, 36, 37, 0);
+      background-color: #252425;
       height: 2.5rem;
       width: 2.5rem; }
       .navbar .lang-menu .lang-btn:hover {
@@ -313,15 +313,15 @@ a {
   .navbar .lang-menu {
     height: 4rem; }
     .navbar .lang-menu .lang-btn {
-      font-size: .7rem;
+      font-size: .8rem;
       font-family: "Raleway", sans-serif;
       opacity: .5;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
       background-color: rgba(37, 36, 37, 0.5);
-      height: 2.5rem;
-      width: 2.5rem; }
+      height: 2.3rem;
+      width: 2.3rem; }
       .navbar .lang-menu .lang-btn:hover {
         opacity: 1;
         border: none; }
@@ -418,9 +418,8 @@ a {
       -o-transition: .3s;
       transition: .3s; }
     .parallax-background .genres-section p:hover {
-      background-color: rgba(37, 36, 37, 0);
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.7); }
+      background-color: rgba(37, 36, 37, 0.5);
+      color: white; }
   .parallax-background .parallax-secondary-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -458,7 +457,7 @@ a {
       -o-transition: .3s;
       transition: .3s; }
     .parallax-background .parallax-secondary-section .btn:hover {
-      border: 1px solid rgba(255, 255, 255, 0.7); }
+      background-color: rgba(37, 36, 37, 0.5); }
     .parallax-background .parallax-secondary-section .btn:focus {
       outline: none; }
     .parallax-background .parallax-secondary-section .down {
@@ -478,7 +477,7 @@ a {
   -ms-flex-pack: start;
   justify-content: flex-start; }
 
-@media (max-width: 770px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
   .parallax-background {
     height: 100vh; }
     .parallax-background .parallax-textbox .titles-section {
@@ -492,17 +491,22 @@ a {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      width: 100%; }
+      width: 100%;
+      margin-top: 1rem; }
       .parallax-background .genres-section p {
-        font-size: 1rem; }
+        font-size: 1rem;
+        padding: .5rem; }
     .parallax-background .parallax-secondary-section {
-      width: 100%; }
+      width: 100%;
+      height: 100%;
+      background-color: rgba(37, 36, 37, 0.2);
+      margin: 0; }
       .parallax-background .parallax-secondary-section .parallax-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
-        margin: 1rem; }
+        margin: .5rem; }
       .parallax-background .parallax-secondary-section .btn {
-        font-size: 1.5rem; } }
+        font-size: 1.2rem; } }
 
 .scroll-to-top {
   font-size: 1rem;
@@ -800,11 +804,16 @@ a {
           color: rgba(37, 36, 37, 0.7);
           border: 1px solid rgba(255, 255, 255, 0);
           margin: 1rem 1rem;
-          padding: .5rem; }
+          padding: .5rem;
+          -webkit-transition: .1s;
+          -o-transition: .1s;
+          transition: .1s; }
           .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-categories .category-name:hover {
-            color: #252425; }
+            color: white;
+            background-color: rgba(37, 36, 37, 0.4); }
         .gallery-main-container .gallery-inner-container .gallery-main-textbox .gallery-categories .active-submenu {
-          border: 1px solid rgba(37, 36, 37, 0.2); }
+          background-color: rgba(37, 36, 37, 0.4);
+          color: white; }
     .gallery-main-container .gallery-inner-container .images-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -907,12 +916,8 @@ a {
           opacity: 1; }
     .gallery-main-container .gallery-inner-container .images-container .genre-title {
       font-size: 2rem; }
-  .compart-back {
-    background-position: center; }
-  .portraits-back {
-    background-position: right; }
-  .bw-back {
-    background-position: left; } }
+  .gallery-main-container.compart-back, .gallery-main-container.portraits-back, .gallery-main-container.bw-back {
+    background-image: none; } }
 
 .footer {
   display: -webkit-box;
@@ -1191,8 +1196,7 @@ a {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      width: 100%;
-      padding: 1rem; }
+      width: 100%; }
       .single-project-page .single-project .single-description .desc-text {
         width: 50%;
         font-size: 1.3rem; }
@@ -1275,8 +1279,8 @@ a {
       .single-project-page .single-project .projects-gallery .images-container .project-image-container img {
         margin: 0;
         opacity: .9; }
-  .shamans-back, .ukr-back, .steampunk-back {
-    background-position: center; } }
+  .single-project-page .shamans-back, .single-project-page .ukr-back, .single-project-page .steampunk-back {
+    background-image: none; } }
 
 .modal-container {
   display: none;

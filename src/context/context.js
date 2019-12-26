@@ -7,13 +7,21 @@ class ContextProvider extends Component {
         navMenu: false,
         modalOpen: false,
         imageSource: '',
-        imageId: '',
+        imageId: 0,
         compartGallery: false,
         bwGallery: false,
         portraitGallery: false,
         eng: true,
         cn: false
     }
+
+// ---------------------------------- IMAGE GALLERY
+
+showNextImage = () => {
+    this.setState(prevState => ({
+        imageId: prevState.imageId + 1
+    }), console.log(this.state.imageId));
+  }
 
 // ---------------------------------- LANGUAGE CHANGING
 
@@ -83,7 +91,8 @@ toggleBackPortraits = () => {
                 toggleBackBw: this.toggleBackBw,
                 toggleBackPortraits: this.toggleBackPortraits,
                 toggleENG: this.toggleENG,
-                toggleCN: this.toggleCN
+                toggleCN: this.toggleCN,
+                showNextImage: this.showNextImage
             }}>
                 {this.props.children}
             </MainContext.Provider>
