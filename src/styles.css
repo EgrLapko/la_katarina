@@ -350,7 +350,7 @@ a {
   pointer-events: all;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .navbar .sign-logo {
     width: 8rem;
   }
@@ -547,7 +547,7 @@ a {
           justify-content: flex-start;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .parallax-background {
     height: 100vh;
   }
@@ -804,7 +804,7 @@ a {
   margin: 0.5rem 0.5rem;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .info-page {
     width: 100%;
   }
@@ -915,7 +915,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .gallery-title {
     font-size: 2rem;
   }
@@ -1047,7 +1047,7 @@ a {
   background-attachment: fixed;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .gallery-main-container .gallery-inner-container .gallery-main-textbox {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1222,7 +1222,7 @@ a {
           animation: fade-out 1s;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .projects-page .projects-title, .projects-page .project-title {
     font-size: 2rem;
   }
@@ -1309,7 +1309,7 @@ a {
           transform: scale(1.1);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .projects-link {
     width: 100%;
     height: 25rem;
@@ -1478,7 +1478,7 @@ a {
   background-size: cover;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .single-project-page .single-project .single-title {
     font-size: 3rem;
     text-align: center;
@@ -1568,7 +1568,7 @@ a {
           animation: modal-open 0.7s;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .modal-container .overlay {
     display: none;
   }

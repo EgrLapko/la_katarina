@@ -260,7 +260,7 @@ a {
 
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .navbar {
         .sign-logo {
             width: 8rem;
@@ -413,7 +413,7 @@ a {
     justify-content: flex-start;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .parallax-background {
         height: 100vh;
         .parallax-textbox {
@@ -579,7 +579,7 @@ a {
     }     
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .info-page {
         width: 100%;
         .image-section {
@@ -693,7 +693,7 @@ a {
     }
   }
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
       .gallery-title {
           font-size: 2rem;
       }
@@ -787,7 +787,7 @@ a {
 
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .gallery-main-container {
         .gallery-inner-container {
             .gallery-main-textbox {
@@ -913,7 +913,7 @@ a {
     }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .projects-page {
         .projects-title, .project-title {
             font-size: 2rem;
@@ -975,7 +975,7 @@ a {
     }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .projects-link {
         width: 100%;
         height: 25rem;
@@ -1096,7 +1096,7 @@ a {
     }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .single-project-page {
         .single-project {
             .single-title {
@@ -1173,7 +1173,7 @@ a {
       animation: modal-open .7s;
   }
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .modal-container {
         .overlay {
             display: none;
