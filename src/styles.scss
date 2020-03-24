@@ -625,6 +625,95 @@ a {
         }
     }
 }
+// ----------------------------------
+
+
+  // smart sticky header 
+  .gallery-title{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgba(37, 36, 37, .9);
+    margin: 0;
+    cursor: default;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+  .gallery-categories{
+    position: sticky;
+    top: -1px;
+    font-size: 3em;
+    transition: .2s ease-out;
+    margin-bottom: 2rem;
+    .category-name {
+        font-size: 1.7rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: rgba(37, 36, 37, .7);
+        border: 1px solid rgba(255, 255, 255, 0);
+        margin: 1rem 1rem;
+        padding: .5rem;
+        transition: .1s;
+        &:hover {
+            // color: rgba(37, 36, 37, 1);
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(37, 36, 37, .4);
+        }
+        } 
+        .active-submenu {
+            // border: 1px solid rgba(37, 36, 37, .2);
+            background-color: rgba(37, 36, 37, .4);
+            color: rgba(255, 255, 255, 1);
+        }             
+    
+    &.isSticky{
+      @include flexbox;
+      width: 80%;
+      margin-top: 5rem;
+      z-index: 10;
+      background-color: rgba(37, 36, 37, 1);
+      height: 5rem;
+      .category-name {
+          font-size: 1.3rem;
+          color: rgba(255, 255, 255, 1);
+          padding: 1rem;
+          &:hover {
+            border: 1px solid rgba(255, 255, 255, .3);
+        }
+      }
+      
+      
+    //   &::after{
+    //     content:" is sticky";
+    //     color: salmon;
+    //   }
+    }
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
+      .gallery-title {
+          font-size: 2rem;
+      }
+      .gallery-categories {
+          @include flexbox;
+          width: 100%;
+          .category-name {
+              font-size: .8rem;
+              margin: 0;
+              padding: o;
+          }
+          &.isSticky {
+              width: 100%;
+              height: 3rem;
+            .category-name {
+                font-size: .7rem;
+            }
+          }
+      }
+  }
 
 // ------------------------- Gallery
 
@@ -634,50 +723,7 @@ a {
     .gallery-inner-container {
         @include flexbox;
         flex-direction: column;
-        width: 100%;    
-            .gallery-main-textbox{
-                @include flexbox;
-                width: 100%;
-                margin-top: 5rem;
-                flex-direction: column;
-                .gallery-title{
-                    width: 100%;
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-size: 3rem;
-                    font-weight: 400;
-                    color: rgba(37, 36, 37, .9);
-                    margin: 0;
-                    cursor: default;
-                }
-                .gallery-categories {
-                    @include flexbox;
-                    width: 100%;
-                    margin: 1rem 0;
-                    height: 4rem;
-                    .category-name {
-                    font-size: 1.7rem;
-                    cursor: pointer;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    color: rgba(37, 36, 37, .7);
-                    border: 1px solid rgba(255, 255, 255, 0);
-                    margin: 1rem 1rem;
-                    padding: .5rem;
-                    transition: .1s;
-                    &:hover {
-                        // color: rgba(37, 36, 37, 1);
-                        color: rgba(255, 255, 255, 1);
-                        background-color: rgba(37, 36, 37, .4);
-                    }
-                    } 
-                    .active-submenu {
-                        // border: 1px solid rgba(37, 36, 37, .2);
-                        background-color: rgba(37, 36, 37, .4);
-                        color: rgba(255, 255, 255, 1);
-                    }             
-                }
-            }
+        width: 100%;  
         .images-container {
             @include flexbox;
             width: 80%;
@@ -685,6 +731,7 @@ a {
             flex-direction: column;
             background-size: cover;
             background-attachment: fixed;
+            margin: auto;
             .genre-title {
                 text-align: center;
                 font-size: 3rem;

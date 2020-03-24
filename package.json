@@ -17,7 +17,8 @@
     "react-scrollable-anchor": "^0.6.1",
     "react-scrollable-url": "^1.5.1",
     "react-scrolltop-button": "^0.1.6",
-    "react-transition-group": "^4.0.0"
+    "react-transition-group": "^4.0.0",
+    "simple-react-lightbox": "^2.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
