@@ -126,6 +126,7 @@ a {
   position: fixed;
   top: 0;
   z-index: 5;
+  pointer-events: all;
 }
 .navbar .sign-logo {
   display: -webkit-box;
@@ -900,19 +901,23 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
-  margin-top: 5rem;
-  z-index: 10;
-  background-color: #252425;
-  height: 5rem;
+  width: 60%;
+  z-index: 5;
+  height: 4rem;
+  pointer-events: all;
 }
 .gallery-categories.isSticky .category-name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: white;
-  padding: 1rem;
+  background-color: rgba(37, 36, 37, 0.7);
+  padding: 0.5rem;
 }
 .gallery-categories.isSticky .category-name:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.gallery-categories.isSticky .category-name.active-submenu {
+  background-color: white;
+  color: #252425;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
@@ -939,10 +944,16 @@ a {
   }
   .gallery-categories.isSticky {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
+    background-color: #252425;
   }
   .gallery-categories.isSticky .category-name {
     font-size: 0.7rem;
+  }
+  .gallery-categories.isSticky .category-name.active-submenu {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: #252425;
+    color: white;
   }
 }
 .gallery-main-container {

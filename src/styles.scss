@@ -109,6 +109,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 5;
+    pointer-events: all;
     .sign-logo {
         @include flexbox;
         width: 10rem;
@@ -671,18 +672,25 @@ a {
     
     &.isSticky{
       @include flexbox;
-      width: 80%;
-      margin-top: 5rem;
-      z-index: 10;
-      background-color: rgba(37, 36, 37, 1);
-      height: 5rem;
+      width: 60%;
+    //   margin-top: 5rem;
+      z-index: 5;
+    //   background-color: rgba(37, 36, 37, .9);
+      height: 4rem;
+      pointer-events: all;
       .category-name {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           color: rgba(255, 255, 255, 1);
-          padding: 1rem;
+          background-color: rgba(37, 36, 37, .7);
+          padding: .5rem;
           &:hover {
             border: 1px solid rgba(255, 255, 255, .3);
         }
+        &.active-submenu {
+            // border: 1px solid rgba(37, 36, 37, .2);
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(37, 36, 37, 1);
+        } 
       }
       
       
@@ -707,9 +715,15 @@ a {
           }
           &.isSticky {
               width: 100%;
-              height: 3rem;
+              height: 4rem;
+              background-color: rgba(37, 36, 37, 1);
             .category-name {
                 font-size: .7rem;
+                &.active-submenu {
+                    border: 1px solid rgba(255, 255, 255, .6);
+                    background-color: rgba(37, 36, 37, 1);
+                    color: rgba(255, 255, 255, 1);
+                } 
             }
           }
       }
