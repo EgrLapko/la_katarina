@@ -6,8 +6,8 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
 import Photo from './Photo';
 import InnerNav from './InnerNav';
-// import photos from '../../photos';
-import photos_local from '../../photos_local';
+import photos from '../../photos';
+// import photos_local from '../../photos_local';
 
 import { english, chinese } from '../../language';
 
@@ -38,7 +38,7 @@ const ImageGallery = ({ match }) => {
                         <h2 className="genre-title">{cn ? chinese.galleryGenre1 : english.galleryGenre1}</h2>
                         <Fade>
                           <div className="gallery-container">
-                            {photos_local.map(picture => picture.category === "compart" && <Photo
+                            {photos.map(picture => picture.category === "compart" && <Photo
                               src = {picture.src}
                               srcBig = {picture.srcBig}
                               title = {picture.title}
@@ -60,7 +60,7 @@ const ImageGallery = ({ match }) => {
                         <h2 className="genre-title">{cn ? chinese.galleryGenre2 : english.galleryGenre2}</h2>
                         <Fade>
                           <div className="gallery-container">
-                            {photos_local.map(picture => picture.category === "bw" && <Photo
+                            {photos.map(picture => picture.category === "bw" && <Photo
                                 src = {picture.src}
                                 srcBig = {picture.srcBig}
                                 title = {picture.title}
@@ -81,7 +81,7 @@ const ImageGallery = ({ match }) => {
                         <h2 className="genre-title">{cn ? chinese.galleryGenre3 : english.galleryGenre3}</h2>
                         <Fade>
                           <div className="gallery-container">
-                            {photos_local.map(picture => picture.category === "portraits" && <Photo
+                            {photos.map(picture => picture.category === "portraits" && <Photo
                                 src = {picture.src}
                                 srcBig = {picture.srcBig}
                                 title = {picture.title}
