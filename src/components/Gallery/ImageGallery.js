@@ -11,7 +11,7 @@ import photos_local from '../../photos_local';
 
 import { english, chinese } from '../../language';
 
-const ImageGallery = ({ match }) => {
+const ImageGallery = ({ match, callbacks }) => {
 
   useEffect(() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'}), []);
 
@@ -32,7 +32,7 @@ const ImageGallery = ({ match }) => {
                 <InnerNav />
                 <Route path = {`${match.path}/images_compart`} render={() =>  
                   <SimpleReactLightbox>
-                    <SRLWrapper options={options}>
+                    <SRLWrapper options={options} callbacks={callbacks}>
                       <div className="images-container">
                         <h2 className="genre-title">{cn ? chinese.galleryGenre1 : english.galleryGenre1}</h2>
                         <Fade>

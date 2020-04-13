@@ -24,7 +24,7 @@ const InnerNav = ({ children, sticky=false, className, ...rest }) => {
         return function(){
         observer.unobserve(cachedRef)
         }
-    })
+    }, [])
     
     return (
         <ContextConsumer>    

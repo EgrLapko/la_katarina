@@ -9,14 +9,15 @@ import { ContextConsumer } from './context/context';
 import { english, chinese } from './language';
 
 const App = () => {
+
   return (
     <ContextConsumer>
       {value => {
         const { cn } = value;
         return (
           <section  style={ cn ? {fontFamily: "'Source-Han-Ligh1aa8e7dc5620303'"} : {fontFamily: "'Montserrat', sans-serif"} }>
-            <Navbar/>
-            <Main/>
+            <Navbar />
+            <Main />
             <ScrollTop
               text={cn ? chinese.onTopBtn : english.onTopBtn}
               className="scroll-to-top"
