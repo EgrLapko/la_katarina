@@ -99,11 +99,11 @@ a {
 
 
 .css-1t4klut {
-    z-index: 2;
+    z-index: 4;
 }
 
 .css-13wv3k {
-    z-index: 2;
+    z-index: 5;
 }
 // ------------------------- NAVBAR
 .navbar {
@@ -114,7 +114,7 @@ a {
     height: 4rem;
     font-size: 1.5rem;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     pointer-events: all;
     .sign-logo {
@@ -213,7 +213,7 @@ a {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 4;
+    z-index: 2;
     background-color: rgba(37, 36, 37, .0);
     // transform: translateY(-110%);
     pointer-events: none;
@@ -681,7 +681,7 @@ a {
       @include flexbox;
       width: 60%;
     //   margin-top: 5rem;
-      z-index: 1;
+      z-index: 3;
     //   background-color: rgba(37, 36, 37, .9);
       height: 4rem;
       pointer-events: all;
