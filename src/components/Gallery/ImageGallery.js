@@ -30,7 +30,6 @@ const ImageGallery = ({ match }) => {
             <div className={"gallery-main-container " + (compartGallery ? "compart-back" : null || bwGallery ? "bw-back" : null || portraitGallery ? "portraits-back" : null )}>
               <div className="gallery-inner-container">
                 <InnerNav />
-                
                 <Route path = {`${match.path}/images_compart`} render={() =>  
                   <SimpleReactLightbox>
                     <SRLWrapper options={options}>
