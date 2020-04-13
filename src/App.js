@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
 import Navbar from './components/Navbar/Navbar';
@@ -8,10 +8,9 @@ import Footer from './components/Footer/Footer';
 import { ContextConsumer } from './context/context';
 import { english, chinese } from './language';
 
-class App extends Component {
-  render() {
-    return (
-      <ContextConsumer>
+const App = () => {
+  return (
+    <ContextConsumer>
       {value => {
         const { cn } = value;
         return (
@@ -32,9 +31,8 @@ class App extends Component {
           </section>
         )
       }}
-      </ContextConsumer>
-    );
-  }
+    </ContextConsumer>
+  )
 }
 
 export default App;

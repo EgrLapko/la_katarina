@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Route } from 'react-router-dom';
 import { ContextConsumer } from '../../context/context';
@@ -6,29 +6,23 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
 import Photo from './Photo';
 import InnerNav from './InnerNav';
-import photos from '../../photos';
-import ModalImage from '../projects_page/single_project/ModalImage';
+// import photos from '../../photos';
+import photos_local from '../../photos_local';
+
 import { english, chinese } from '../../language';
 
+const ImageGallery = ({ match }) => {
 
-export default class ImageGallery extends Component {
+  useEffect(() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'}), []);
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+  const options = {
+    showCaption: false,
+    showThumbnails: false,
+    transitionSpeed: 400,
+    transitionTimingFunction: "linear",
+  };
 
-  render() {
-
-    const {match} = this.props;
-
-    const options = {
-      showCaption: false,
-      showThumbnails: false,
-      transitionSpeed: 400,
-      transitionTimingFunction: "linear",
-    };
-
-    return (
+  return (
       <ContextConsumer>
         {value => {
           const { compartGallery, bwGallery, portraitGallery, cn } = value;
@@ -44,7 +38,7 @@ export default class ImageGallery extends Component {
                         <h2 className="genre-title">{cn ? chinese.galleryGenre1 : english.galleryGenre1}</h2>
                         <Fade>
                           <div className="gallery-container">
-                            {photos.map(picture => picture.category === "compart" && <Photo
+                            {photos_local.map(picture => picture.category === "compart" && <Photo
                               src = {picture.src}
                               srcBig = {picture.srcBig}
                               title = {picture.title}
@@ -53,7 +47,6 @@ export default class ImageGallery extends Component {
                             />)}
                           </div>
                         </Fade> 
-                        <ModalImage /> 
                       </div> 
                     </SRLWrapper>
                   </SimpleReactLightbox>
@@ -67,7 +60,7 @@ export default class ImageGallery extends Component {
                         <h2 className="genre-title">{cn ? chinese.galleryGenre2 : english.galleryGenre2}</h2>
                         <Fade>
                           <div className="gallery-container">
-                            {photos.map(picture => picture.category === "bw" && <Photo
+                            {photos_local.map(picture => picture.category === "bw" && <Photo
                                 src = {picture.src}
                                 srcBig = {picture.srcBig}
                                 title = {picture.title}
@@ -75,8 +68,7 @@ export default class ImageGallery extends Component {
                                 imgId = {picture.index}
                             />)}
                           </div>
-                        </Fade>  
-                        <ModalImage />      
+                        </Fade>     
                     </div>
                   </SRLWrapper>
                 </SimpleReactLightbox>
@@ -89,7 +81,7 @@ export default class ImageGallery extends Component {
                         <h2 className="genre-title">{cn ? chinese.galleryGenre3 : english.galleryGenre3}</h2>
                         <Fade>
                           <div className="gallery-container">
-                            {photos.map(picture => picture.category === "portraits" && <Photo
+                            {photos_local.map(picture => picture.category === "portraits" && <Photo
                                 src = {picture.src}
                                 srcBig = {picture.srcBig}
                                 title = {picture.title}
@@ -97,8 +89,7 @@ export default class ImageGallery extends Component {
                                 imgId = {picture.index}
                             />)}
                           </div>
-                        </Fade> 
-                        <ModalImage />       
+                        </Fade>     
                     </div>
                   </SRLWrapper>
                 </SimpleReactLightbox>
@@ -108,11 +99,10 @@ export default class ImageGallery extends Component {
           )
         }}
       </ContextConsumer>
-      
-    )
-  }
+  )
 }
 
+export default ImageGallery;
 
 
 

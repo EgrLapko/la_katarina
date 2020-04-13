@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import { ContextConsumer } from '../../context/context';
 import { english, chinese } from '../../language';
 
-export default class Info extends Component {
-    render() {
-        return (
-            <ContextConsumer>
+import contactImage from '../../images/katarina.jpg';
+
+const Info = () => {
+    return (
+        <ContextConsumer>
                 {
                     value => {
                         const { cn, eng } = value;
                         return (
                             <div className="info-page">
                                 <div className="image-section">   
-                                    <img className="contact-image" src="https://pic.yupoo.com/yehorlapko/e2c89cea/8f94b8a2.jpg" alt=""/>
+                                    <img className="contact-image" src={contactImage} alt=""/>
                                 </div>
                                 <h2 className="about-name">| <span>Katarina</span>Blazhievskaya |</h2>
                                 { cn &&
@@ -72,6 +73,7 @@ export default class Info extends Component {
                     }
                 }
             </ContextConsumer>
-        )
-    }
+    )
 }
+
+export default Info;
