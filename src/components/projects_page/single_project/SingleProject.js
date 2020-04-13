@@ -4,8 +4,8 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
 import ProjectTitle from './ProjectTitle';
 import SingleDescription from './SingleDescription';
-import projects_images from '../projects_images';
-// import projects_images_local from '../projects_images_local';
+// import projects_images from '../projects_images';
+import projects_images_local from '../projects_images_local';
 import SingleImage from './SingleImage';
 import { ContextConsumer } from '../../../context/context';
 import { english, chinese } from '../../../language';
@@ -40,7 +40,7 @@ const SingleProject = ({ match }) => {
                                                 <SingleDescription desc = {cn ? chinese.singleProjectDesc1 : english.singleProjectDesc1} />
                                                 <div className="projects-gallery">
                                                     <div className="images-container">
-                                                        {projects_images.map(image => image.project === "shamans" && 
+                                                        {projects_images_local.map(image => image.project === "shamans" && 
                                                             <SingleImage
                                                                 key = {image.id}
                                                                 src = {image.src}
@@ -67,7 +67,7 @@ const SingleProject = ({ match }) => {
                                                 <SingleDescription desc = {cn ? chinese.singleProjectDesc2 : english.singleProjectDesc2} />
                                                 <div className="projects-gallery">
                                                     <div className="images-container">
-                                                        {projects_images.map(image => image.project === "ukrainian" && 
+                                                        {projects_images_local.map(image => image.project === "ukrainian" && 
                                                             <SingleImage
                                                                 key = {image.id}
                                                                 src = {image.src}
@@ -93,7 +93,7 @@ const SingleProject = ({ match }) => {
                                                 <SingleDescription desc = {cn ? chinese.singleProjectDesc3 : english.singleProjectDesc3} />
                                                 <div className="projects-gallery">
                                                     <div className="images-container">
-                                                        {projects_images.map(image => image.project === "steampunk" && 
+                                                        {projects_images_local.map(image => image.project === "steampunk" && 
                                                             <SingleImage
                                                                 key = {image.id}
                                                                 src = {image.src}
