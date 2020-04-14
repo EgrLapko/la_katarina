@@ -48,6 +48,7 @@ export const Navbar = () => {
                     <h2 className="menu-category" onClick={handleNavMenu}>{cn ? chinese.navTitle3 : english.navTitle3}</h2>
                     <Link to="/about"><p className="menu-option" onClick={handleNavMenu}>{cn ? chinese.navTitle3Opt1 : english.navTitle3Opt1 }</p></Link>
                     <Link to="/contact"><p className="menu-option" onClick={handleNavMenu}>{cn ? chinese.navTitle3Opt2 : english.navTitle3Opt2 }</p></Link>
+                    <Link to="/prints"><p className="menu-option" onClick={handleNavMenu}>Prints</p></Link>
                   </div>
                 </div>
               </nav>

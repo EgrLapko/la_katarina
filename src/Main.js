@@ -6,6 +6,7 @@ import ImageGallery from './components/Gallery/ImageGallery';
 import Projects from './components/projects_page/Projects';
 import SingleProject from './components/projects_page/single_project/SingleProject';
 import Info from './components/Info/Info';
+import Prints from './components/Prints';
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       <Route path = '/gallery' component={ImageGallery} />
       <Route path = '/about' component = {Info} />
       <Route path = '/contact' component = {Info} />
+      <Route path = '/prints' component = {Prints} />
       <Route path = '/projects/overview' exact component = {Projects} />
       <Route path = '/projects/:project' component = {SingleProject} />
     </Switch>

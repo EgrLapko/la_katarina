@@ -65,7 +65,15 @@ export const english = {
     contactPageTitle: "Contact me",
     contactPageName: "Katarina Blazhievskaya",
     contactPageSocials: "Social Networks",
-    contactLocation: "Beijing, China"
+    contactLocation: "Beijing, China",
+    // ------------------------ PRINTS PAGE
+    printRow1: 'Most of my artworks can be purchased as prints in different sizes.',
+    printRow2: 'Available sizes vary between 20X30cm and 100X150cm.',
+    printRow3: 'Different types of Classic or FinaArt photo paper on request.',
+    printRow4: 'All prints are new printed personally and in limited edition, numbered, stamped, signed by the author.',
+    printRow5: 'Delivery worldwide by registered mail with tracking.',
+    printRow6: 'Secure payments',
+    printRow7: 'For order, prices or any questions: ',
 };
 
 export const chinese = {
@@ -135,5 +143,14 @@ export const chinese = {
     contactPageTitle: "联系我",
     contactPageName: "卡塔琳娜·布拉日叶夫斯卡亚",
     contactPageSocials: "社交网络",
-    contactLocation: "北京, 中国"
+    contactLocation: "北京, 中国",
+    // ------------------------ PRINTS
+    printRow1: '您可以购买我的大部分摄影作品的印刷版.',
+    printRow2: '可选尺寸：20X30厘米与100X150厘米之间。',
+    printRow3: '可以根据顾客的要求提供传统或美术照片纸不同的种类。',
+    printRow4: '每一张印刷画都是由作者亲自印刷出来的，都有版数、印章和签字，限量印刷。',
+    printRow5: '全球追踪物流发货。',
+    printRow6: '如欲了解价格、',
+    printRow7: '付款方式或别的问题，请联系： ',
+
 }

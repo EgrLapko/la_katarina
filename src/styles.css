@@ -1601,3 +1601,26 @@ a {
     height: auto;
   }
 }
+.prints-page {
+  display: -ms-grid;
+  display: grid;
+  min-height: 90vh;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+.prints-page__text {
+  border: 1px solid rgba(37, 36, 37, 0.05);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.prints-page__text .prints-text {
+  margin: 0.5rem 0;
+  padding: 0;
+}
+.prints-page__text .prints-text span {
+  font-weight: 600;
+}

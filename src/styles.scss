@@ -1212,3 +1212,26 @@ a {
 }
 
 
+// ------------------------- PRINTS
+.prints-page {
+    display: grid;
+    min-height: 90vh;
+    background-color: rgba(255, 255, 255, 1);
+    align-items: center;
+    justify-items: center;
+    &__text {
+        border: 1px solid rgba(37, 36, 37, .05);
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.3rem;
+        .prints-text {
+            margin: .5rem 0;
+            padding: 0;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
